@@ -67,7 +67,7 @@ const Form = forwardRef(function Form(props, ref) {
             alignItems="center"
             justifyContent="space-between"
             sx={{
-              height: "996px",
+              py: 10,
               backgroundColor: "primary.dark",
               px: 30,
             }}
