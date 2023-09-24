@@ -8,7 +8,11 @@ function Header({ resultRef }) {
     resultRef.current.scrollIntoView({ behavior: "smooth" });
   }
   return (
-    <Parallax bgImage="/images/leaves2.webp" strength={400}>
+    <Parallax
+      bgImage="/images/leavesweb.webp"
+      strength={400}
+      style={{ width: "100vw" }}
+    >
       <Stack
         justifyContent="center"
         sx={{
