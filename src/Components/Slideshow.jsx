@@ -26,6 +26,7 @@ function Slideshow() {
 
   return (
     <Carousel
+      swipe={false}
       sx={{ overflow: "visible" }}
       autoPlay={false}
       navButtonsAlwaysVisible={true}

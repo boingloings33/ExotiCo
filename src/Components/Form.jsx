@@ -61,19 +61,19 @@ const Form = forwardRef(function Form(props, ref) {
       {!isMobile && (
         <>
           <Stack
+            spacing={2}
             ref={ref}
             direction="row"
-            spacing={4}
             alignItems="center"
-            justifyContent="center"
+            justifyContent="space-between"
             sx={{
               height: "996px",
               backgroundColor: "primary.dark",
-              px: 22,
+              px: 36,
             }}
           >
             <form onSubmit={handleSubmit(onSubmit)} noValidate>
-              <Stack spacing={2} alignItems="center">
+              <Stack spacing={2} alignItems="start">
                 <Typography variant="h1" alignSelf={!isTablet ? "start" : ""}>
                   Get in Touch
                 </Typography>
@@ -85,7 +85,7 @@ const Form = forwardRef(function Form(props, ref) {
                   error={!!errors.name}
                   helperText={errors.name?.message}
                   sx={{
-                    width: "100%",
+                    width: "40vw",
                   }}
                 />
                 <TextField

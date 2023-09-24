@@ -18,7 +18,7 @@ function Section1Web() {
         backgroundColor: "primary.light",
         py: 12,
         width: "auto",
-        px: { sm: 8, lg: 28 },
+        px: { sm: 8, lg: 36 },
       }}
     >
       <Box>
