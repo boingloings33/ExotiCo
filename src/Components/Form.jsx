@@ -69,7 +69,7 @@ const Form = forwardRef(function Form(props, ref) {
             sx={{
               height: "996px",
               backgroundColor: "primary.dark",
-              px: 36,
+              px: 30,
             }}
           >
             <form onSubmit={handleSubmit(onSubmit)} noValidate>
@@ -96,7 +96,7 @@ const Form = forwardRef(function Form(props, ref) {
                   error={!!errors.email}
                   helperText={errors.email?.message}
                   sx={{
-                    width: "100%",
+                    width: "40vw",
                   }}
                 />
                 <TextField
@@ -109,7 +109,7 @@ const Form = forwardRef(function Form(props, ref) {
                   error={!!errors.number}
                   helperText={errors.number?.message}
                   sx={{
-                    width: "100%",
+                    width: "40vw",
                   }}
                 />
                 <TextField
@@ -124,7 +124,7 @@ const Form = forwardRef(function Form(props, ref) {
                   error={!!errors.message}
                   helperText={errors.message?.message}
                   sx={{
-                    width: "100%",
+                    width: "40vw",
                   }}
                 />
                 <Button
@@ -152,7 +152,7 @@ const Form = forwardRef(function Form(props, ref) {
                 src="/images/kid-snake.webp"
                 alt="kid-holding-snake"
                 style={{
-                  maxWidth: 420,
+                  maxWidth: 400,
                   borderRadius: 16,
                 }}
               />
