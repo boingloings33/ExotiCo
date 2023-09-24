@@ -8,7 +8,7 @@ function Header({ resultRef }) {
     resultRef.current.scrollIntoView({ behavior: "smooth" });
   }
   return (
-    <Parallax bgImage="/images/leaves2.png" strength={400}>
+    <Parallax bgImage="/images/leaves2.webp" strength={400}>
       <Stack
         justifyContent="center"
         sx={{
@@ -20,7 +20,7 @@ function Header({ resultRef }) {
         <Stack spacing={1} alignItems="center" justifyContent="center">
           {!isMobile && (
             <img
-              src="images/allie-icon.png"
+              src="images/allie-icon.jpg"
               alt=""
               style={{
                 width: 186,
@@ -30,7 +30,7 @@ function Header({ resultRef }) {
           )}
           {isMobile && (
             <img
-              src="images/allie-icon.png"
+              src="images/allie-icon.jpg"
               alt=""
               style={{
                 width: 106,

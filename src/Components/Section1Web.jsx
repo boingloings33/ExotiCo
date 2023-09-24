@@ -30,7 +30,7 @@ function Section1Web() {
           <Typography variant="h1">Title 1</Typography>
           {isTablet && (
             <img
-              src="./images/allie-pic.jpg"
+              src="./images/allie-pic.webp"
               style={{ width: 240, height: 240, borderRadius: 16 }}
             ></img>
           )}
@@ -67,7 +67,7 @@ function Section1Web() {
           {!isTablet && (
             <img
               style={{ objectFit: "cover", maxWidth: 374, borderRadius: 16 }}
-              src="./images/allie-pic.jpg"
+              src="./images/allie-pic.webp"
               alt=""
             />
           )}
@@ -76,7 +76,7 @@ function Section1Web() {
         <Stack direction="row" spacing={4} alignItems="top">
           {isTablet && (
             <img
-              src="./images/image-3.jpg"
+              src="./images/image-3.webp"
               style={{
                 objectFit: "cover",
                 width: 300,
@@ -88,7 +88,7 @@ function Section1Web() {
 
           {!isTablet && (
             <img
-              src="./images/image-3.jpg"
+              src="./images/image-3.webp"
               style={{
                 objectFit: "cover",
                 width: 705,

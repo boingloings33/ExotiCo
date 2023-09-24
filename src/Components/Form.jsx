@@ -149,7 +149,7 @@ const Form = forwardRef(function Form(props, ref) {
             </form>
             {!isTablet && (
               <img
-                src="/images/kid-snake.jpg"
+                src="/images/kid-snake.webp"
                 alt="kid-holding-snake"
                 style={{
                   maxWidth: 420,
