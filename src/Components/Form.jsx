@@ -152,7 +152,7 @@ const Form = forwardRef(function Form(props, ref) {
                 src="/images/kid-snake.webp"
                 alt="kid-holding-snake"
                 style={{
-                  maxWidth: 400,
+                  maxWidth: 380,
                   borderRadius: 16,
                 }}
               />
