@@ -59,7 +59,7 @@ function Header({ resultRef }) {
                 fontSize: { xs: "22px", sm: "32px" },
               }}
             >
-              We love casting spells
+              insert slogan/subtext
             </Typography>
             <Button
               size="large"
