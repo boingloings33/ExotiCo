@@ -22,20 +22,47 @@ function Section1Web() {
       }}
     >
       <Box>
+        <Stack direction="row" spacing={4} alignItems="top">
+          {!isTablet && (
+            <img
+              src="./images/image-3.webp"
+              style={{
+                objectFit: "cover",
+                width: 705,
+                height: 497,
+                borderRadius: 16,
+              }}
+            />
+          )}
+          <Stack>
+            <Typography variant="h1">My mission</Typography>
+            <Typography
+              lineHeight={2}
+              variant="body2"
+              display="block"
+              sx={{ pt: 3, maxWidth: 700 }}
+            >
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Consequatur dolorum praesentium nostrum ex doloremque, esse vel,
+              iste aliquid sit, explicabo Lorem ips? Deserunt omnis iusto porro
+              eveniet esse reiciendis dolore tempore orum praesentium nostrum
+              el. mnis maxi Deserunt omnis iusto porro eveniet esse reiciendis
+              dolore tempore orum praesentium nostrum el, doloribus aliquid sint
+              quam corrupti eum fuga minima! Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Soluta maxime cupiditate eveniet
+              molestias dolorum unde nihil quia neque voluptatem labore, iste
+              distinctio vitae deserunt. Quos vero quas nam recusandae possimus?
+            </Typography>
+          </Stack>
+        </Stack>
+        <Divider sx={{ mt: 10, mb: 10 }} />
+        <Typography variant="h1">About me</Typography>
         <Stack
           direction="row"
-          justifyContent="space-between"
+          spacing={4}
+          justifyContent="center"
           alignItems="center"
         >
-          <Typography variant="h1">Title 1</Typography>
-          {isTablet && (
-            <img
-              src="./images/allie-pic.webp"
-              style={{ width: 240, height: 240, borderRadius: 16 }}
-            ></img>
-          )}
-        </Stack>
-        <Stack direction="row" spacing={4} alignItems="top">
           <Typography
             lineHeight={2}
             variant="body2"
@@ -71,49 +98,6 @@ function Section1Web() {
               alt=""
             />
           )}
-        </Stack>
-        <Divider sx={{ mt: 10, mb: 10 }} />
-        <Stack direction="row" spacing={4} alignItems="top">
-          {isTablet && (
-            <img
-              src="./images/image-3.webp"
-              style={{
-                objectFit: "cover",
-                width: 300,
-                height: 490,
-                borderRadius: 16,
-              }}
-            />
-          )}
-
-          {!isTablet && (
-            <img
-              src="./images/image-3.webp"
-              style={{
-                objectFit: "cover",
-                width: 705,
-                height: 497,
-                borderRadius: 16,
-              }}
-            />
-          )}
-          <Stack>
-            <Typography variant="h1">Title 2</Typography>
-            <Typography
-              lineHeight={2}
-              variant="body2"
-              display="block"
-              sx={{ pt: 3, maxWidth: 418 }}
-            >
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consequatur dolorum praesentium nostrum ex doloremque, esse vel,
-              iste aliquid sit, explicabo Lorem ips? Deserunt omnis iusto porro
-              eveniet esse reiciendis dolore tempore orum praesentium nostrum
-              el. mnis maxi Deserunt omnis iusto porro eveniet esse reiciendis
-              dolore tempore orum praesentium nostrum el, doloribus aliquid sint
-              quam corrupti eum fuga minima!
-            </Typography>
-          </Stack>
         </Stack>
       </Box>
     </Stack>
