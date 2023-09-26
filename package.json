@@ -20,7 +20,8 @@
     "react-hook-form": "^7.46.1",
     "react-material-ui-carousel": "^3.4.2",
     "react-parallax": "^3.5.1",
-    "react-slideshow-image": "^4.2.1"
+    "react-slideshow-image": "^4.2.1",
+    "swiper": "^10.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
