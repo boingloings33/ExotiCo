@@ -299,7 +299,9 @@ const Form = forwardRef(function Form(props, ref) {
                     sx={{
                       width: "100%",
                     }}
-                    InputLabelProps={{ style: { color: "secondary.light" } }}
+                    InputLabelProps={{
+                      style: { color: "white" },
+                    }}
                   />
                 )}
               />
@@ -321,7 +323,7 @@ const Form = forwardRef(function Form(props, ref) {
                     sx={{
                       width: "100%",
                     }}
-                    InputLabelProps={{ style: { color: "secondary.light" } }}
+                    InputLabelProps={{ style: { color: "white" } }}
                   />
                 )}
               />
@@ -341,7 +343,7 @@ const Form = forwardRef(function Form(props, ref) {
                     sx={{
                       width: "100%",
                     }}
-                    InputLabelProps={{ style: { color: "secondary.light" } }}
+                    InputLabelProps={{ style: { color: "white" } }}
                   />
                 )}
               />
@@ -363,7 +365,7 @@ const Form = forwardRef(function Form(props, ref) {
                     sx={{
                       width: "100%",
                     }}
-                    InputLabelProps={{ style: { color: "secondary.light" } }}
+                    InputLabelProps={{ style: { color: "white" } }}
                   />
                 )}
               />
@@ -387,7 +389,7 @@ const Form = forwardRef(function Form(props, ref) {
                     sx={{
                       width: "100%",
                     }}
-                    InputLabelProps={{ style: { color: "secondary.light" } }}
+                    InputLabelProps={{ style: { color: "white" } }}
                   />
                 )}
               />
