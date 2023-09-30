@@ -71,6 +71,7 @@ const Form = forwardRef(function Form(props, ref) {
               justifyContent="center"
               sx={{
                 py: 10,
+
                 mt: 16,
                 borderRadius: 6,
                 backgroundColor: "primary.main",
@@ -90,8 +91,7 @@ const Form = forwardRef(function Form(props, ref) {
                 sx={{ color: "secondary.light" }}
                 fontWeight={300}
               >
-                Diam et aliquam turpis convallis tortor auctor sit aliquam
-                tristique. Quis in cursus dolor sit.
+                Let me know I can help.
               </Typography>
               <Grid container spacing={1} sx={{ px: 20, pt: 2 }}>
                 <Grid item xs={6}>
@@ -114,7 +114,7 @@ const Form = forwardRef(function Form(props, ref) {
                           width: "100%",
                         }}
                         InputLabelProps={{
-                          style: { color: "secondary.light" },
+                          style: { color: "white" },
                         }}
                       />
                     )}
@@ -141,7 +141,7 @@ const Form = forwardRef(function Form(props, ref) {
                           width: "100%",
                         }}
                         InputLabelProps={{
-                          style: { color: "secondary.light" },
+                          style: { color: "white" },
                         }}
                       />
                     )}
@@ -167,7 +167,7 @@ const Form = forwardRef(function Form(props, ref) {
                           width: "100%",
                         }}
                         InputLabelProps={{
-                          style: { color: "secondary.light" },
+                          style: { color: "white" },
                         }}
                       />
                     )}
@@ -193,7 +193,7 @@ const Form = forwardRef(function Form(props, ref) {
                           width: "100%",
                         }}
                         InputLabelProps={{
-                          style: { color: "secondary.light" },
+                          style: { color: "white" },
                         }}
                       />
                     )}
@@ -221,7 +221,7 @@ const Form = forwardRef(function Form(props, ref) {
                           width: "100%",
                         }}
                         InputLabelProps={{
-                          style: { color: "secondary.light" },
+                          style: { color: "white" },
                         }}
                       />
                     )}
