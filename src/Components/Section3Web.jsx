@@ -1,11 +1,4 @@
-import {
-  Typography,
-  Stack,
-  Box,
-  useTheme,
-  useMediaQuery,
-  Button,
-} from "@mui/material";
+import { Typography, Stack } from "@mui/material";
 
 function Section3Web() {
   return (
@@ -16,7 +9,6 @@ function Section3Web() {
       sx={{
         backgroundColor: "#FFFFFF",
         width: "auto",
-        px: { sm: 8, md: 18, xl: 28 },
         mt: 16,
       }}
     >

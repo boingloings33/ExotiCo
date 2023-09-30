@@ -6,11 +6,10 @@ import Turtle from "../../public/icons/Turtle";
 function Section2Web() {
   return (
     <Stack
-      spacing={3}
+      spacing={2}
       alignItems="center"
       sx={{
         backgroundColor: "#FFFFFF",
-        mx: { sm: 8, md: 18, xl: 28 },
         mt: 16,
         // borderRadius: 10,
         // p: 8,

@@ -72,7 +72,6 @@ const Form = forwardRef(function Form(props, ref) {
               sx={{
                 py: 10,
                 mt: 16,
-                mx: { xs: 8, md: 18, xl: 28 },
                 borderRadius: 6,
                 backgroundColor: "primary.main",
               }}

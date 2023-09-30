@@ -20,7 +20,6 @@ function Section1Web({ resultRef }) {
       sx={{
         backgroundColor: "#FFFFFF",
         mt: 16,
-        px: { sm: 8, md: 18, xl: 28 },
       }}
     >
       <Stack

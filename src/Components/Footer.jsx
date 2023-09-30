@@ -9,7 +9,7 @@ function Footer() {
       direction="row"
       justifyContent="space-between"
       alignItems="center"
-      sx={{ backgroundColor: "white", px: { sm: 8, md: 18, xl: 28 }, py: 4 }}
+      sx={{ backgroundColor: "white", py: 4 }}
     >
       <Stack spacing={2}>
         <Typography
