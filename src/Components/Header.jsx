@@ -46,7 +46,7 @@ function Header({ resultRef }) {
             variant="h1"
             sx={{
               color: "primary.light",
-              fontSize: { xs: "48px", sm: "108px" },
+              fontSize: { xs: "48px", sm: "99px" },
               fontFamily: "'Fredoka', sans-serif;",
             }}
           >
@@ -54,20 +54,22 @@ function Header({ resultRef }) {
           </Typography>
           <Stack spacing={4} alignItems="center">
             <Typography
+              textAlign="center"
               sx={{
                 color: "primary.light",
-                fontSize: { xs: "22px", sm: "32px" },
+                maxWidth: { xs: 300, sm: 520 },
+                fontSize: { xs: "16px", sm: "20px" },
               }}
             >
-              insert slogan/subtext
+              Lorem ipsum dolor sit amet consectetur adipisicing elit me poonk.
             </Typography>
             <Button
               size="large"
               onClick={handleScrollBottom}
               variant="contained"
-              sx={{ borderRadius: 50, height: 50, width: 160 }}
+              sx={{ borderRadius: 100, width: "fit-content", py: 1 }}
             >
-              Get in touch
+              Get Started
             </Button>
           </Stack>
         </Stack>

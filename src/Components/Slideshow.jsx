@@ -8,7 +8,7 @@ function Slideshow() {
       src: "/images/allie-pic.webp",
       title: "First Slide",
       caption:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aspernatur fuga consequatur, asperiores deserunt ut eos corporis possimus quo vero aut ipsam rerum id! Ducimus harum debitis adipisci ipsum aut? asda oong,",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aspernatur fuga consequatur, asperiores deserunt ut eos corporis possimus quo vero aut ipsam rerum id! Ducimus harum debitis adipisci ipsum aut? asda oong, it do be like dat",
     },
     {
       src: "/images/image-2.jpg",
@@ -20,22 +20,22 @@ function Slideshow() {
       src: "/images/image-3.webp",
       title: "Third Slide",
       caption:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, deserunt cupiditate, laboriosam sapiente dolore ad vel debitis deleniti delectus placeat eaque, ea illum corporis voluptate tenetur accusamus recusandae ",
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, deserunt cupiditate, laboriosam sapiente dolore ad vel debitis deleniti delectus placeat eaque, ea illum corporis voluptate tenetur accusamus recusandae alamoo mc griddle",
     },
   ];
 
   return (
     <Carousel
-      swipe={false}
-      sx={{ overflow: "visible" }}
+      swipe={true}
+      sx={{ width: "75%" }}
       autoPlay={false}
-      navButtonsAlwaysVisible={true}
       fullHeightHover={false}
       indicatorContainerProps={{
         style: {
           overflow: "visible",
         },
       }}
+      navButtonsAlwaysInvisible={true}
       navButtonsProps={{
         style: {
           backgroundColor: "rgba(18, 18, 18, 0.8)",

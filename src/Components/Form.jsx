@@ -6,17 +6,20 @@ import {
   Button,
   useMediaQuery,
   useTheme,
+  Grid,
 } from "@mui/material";
 import { useForm } from "react-hook-form";
 import { forwardRef, useEffect, useState } from "react";
 import FormSent from "./FormSent";
+import EastIcon from "@mui/icons-material/East";
 const Form = forwardRef(function Form(props, ref) {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isTablet = useMediaQuery(theme.breakpoints.down("md"));
   const form = useForm({
     defaultValues: {
-      name: "",
+      firstname: "",
+      lastname: "",
       email: "",
       number: "",
       message: "",
@@ -60,104 +63,149 @@ const Form = forwardRef(function Form(props, ref) {
     <>
       {!isMobile && (
         <>
-          <Stack
-            spacing={2}
-            ref={ref}
-            direction="row"
-            alignItems="center"
-            justifyContent="space-between"
-            sx={{
-              py: 10,
-              backgroundColor: "primary.dark",
-              px: 30,
-            }}
-          >
-            <form onSubmit={handleSubmit(onSubmit)} noValidate>
-              <Stack spacing={2} alignItems="start">
-                <Typography variant="h1" alignSelf={!isTablet ? "start" : ""}>
-                  Get in Touch
-                </Typography>
-                <TextField
-                  variant="outlined"
-                  label="Name"
-                  type="text"
-                  {...register("name", { required: "Name is required" })}
-                  error={!!errors.name}
-                  helperText={errors.name?.message}
+          <form onSubmit={handleSubmit(onSubmit)} noValidate>
+            <Stack
+              spacing={1}
+              ref={ref}
+              alignItems="center"
+              justifyContent="center"
+              sx={{
+                py: 10,
+                mt: 12,
+                mx: { xs: 8, md: 18, xl: 28 },
+                borderRadius: 6,
+                backgroundColor: "primary.main",
+              }}
+            >
+              <Typography
+                variant="h1"
+                alignSelf="center"
+                sx={{ color: "primary.light" }}
+              >
+                Get in Touch
+              </Typography>
+              <Typography
+                variant="body2"
+                fontSize={20}
+                lineHeight={1.6}
+                sx={{ color: "primary.light" }}
+                fontWeight={300}
+              >
+                Diam et aliquam turpis convallis tortor auctor sit aliquam
+                tristique. Quis in cursus dolor sit.
+              </Typography>
+              <Grid container spacing={1} sx={{ px: 20, pt: 2 }}>
+                <Grid item xs={6}>
+                  <TextField
+                    variant="outlined"
+                    label="First Name"
+                    type="text"
+                    {...register("firstname", {
+                      required: "First Name is required",
+                    })}
+                    error={!!errors.firstname}
+                    helperText={errors.firstname?.message}
+                    sx={{
+                      width: "100%",
+                    }}
+                    InputLabelProps={{ style: { color: "white" } }}
+                  />
+                </Grid>
+                <Grid item xs={6}>
+                  <TextField
+                    variant="outlined"
+                    label="Last Name"
+                    type="text"
+                    {...register("lastname", {
+                      required: "Last Name is required",
+                    })}
+                    error={!!errors.lastname}
+                    helperText={errors.lastname?.message}
+                    sx={{
+                      width: "100%",
+                    }}
+                    InputLabelProps={{ style: { color: "white" } }}
+                  />
+                </Grid>
+                <Grid item xs={6}>
+                  <TextField
+                    variant="outlined"
+                    label="Email"
+                    type="email"
+                    {...register("email", { required: "Email is required" })}
+                    error={!!errors.email}
+                    helperText={errors.email?.message}
+                    sx={{
+                      width: "100%",
+                    }}
+                    InputLabelProps={{ style: { color: "white" } }}
+                  />
+                </Grid>
+                <Grid item xs={6}>
+                  <TextField
+                    variant="outlined"
+                    label="Phone Number"
+                    type="text"
+                    {...register("number", {
+                      required: "Phone number is required",
+                    })}
+                    error={!!errors.number}
+                    helperText={errors.number?.message}
+                    sx={{
+                      width: "100%",
+                    }}
+                    InputLabelProps={{ style: { color: "white" } }}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    multiline={true}
+                    rows={8}
+                    variant="outlined"
+                    label="Message"
+                    type="text"
+                    {...register("message", {
+                      required: "Message is required",
+                    })}
+                    error={!!errors.message}
+                    helperText={errors.message?.message}
+                    sx={{
+                      width: "100%",
+                    }}
+                    InputLabelProps={{ style: { color: "white" } }}
+                  />
+                </Grid>
+                <Box
                   sx={{
-                    width: "40vw",
-                  }}
-                />
-                <TextField
-                  variant="outlined"
-                  label="Email"
-                  type="email"
-                  {...register("email", { required: "Email is required" })}
-                  error={!!errors.email}
-                  helperText={errors.email?.message}
-                  sx={{
-                    width: "40vw",
-                  }}
-                />
-                <TextField
-                  variant="outlined"
-                  label="Phone Number"
-                  type="text"
-                  {...register("number", {
-                    required: "Phone number is required",
-                  })}
-                  error={!!errors.number}
-                  helperText={errors.number?.message}
-                  sx={{
-                    width: "40vw",
-                  }}
-                />
-                <TextField
-                  multiline={true}
-                  rows={8}
-                  variant="outlined"
-                  label="Message"
-                  type="text"
-                  {...register("message", {
-                    required: "Message is required",
-                  })}
-                  error={!!errors.message}
-                  helperText={errors.message?.message}
-                  sx={{
-                    width: "40vw",
-                  }}
-                />
-                <Button
-                  disabled={isFetching ? true : false}
-                  size="large"
-                  type="submit"
-                  variant="contained"
-                  sx={{
+                    mt: 2,
                     width: "100%",
-                    borderRadius: 4,
-                    position: "relative",
+                    display: "flex",
+                    justifyContent: "end",
                   }}
                 >
-                  Send
-                  {isFormSent && (
-                    <Box sx={{ position: "absolute", bottom: -40 }}>
-                      <FormSent buttonSize="small" />
-                    </Box>
-                  )}
-                </Button>
-              </Stack>
-            </form>
-            {!isTablet && (
-              <img
-                src="/images/kid-snake.webp"
-                alt="kid-holding-snake"
-                style={{
-                  maxWidth: 380,
-                  borderRadius: 16,
-                }}
-              />
-            )}
-          </Stack>
+                  <Button
+                    disabled={isFetching ? true : false}
+                    size="large"
+                    type="submit"
+                    variant="contained"
+                    sx={{
+                      borderRadius: 100,
+                      position: "relative",
+                      backgroundColor: "white",
+                      color: "primary.main",
+                    }}
+                  >
+                    Submit {<EastIcon sx={{ ml: 1 }} />}
+                    {isFormSent && (
+                      <Box sx={{ position: "absolute", bottom: -40 }}>
+                        <FormSent buttonSize="small" />
+                      </Box>
+                    )}
+                  </Button>
+                </Box>
+              </Grid>
+            </Stack>
+          </form>
         </>
       )}
 
@@ -168,27 +216,49 @@ const Form = forwardRef(function Form(props, ref) {
           alignItems="center"
           justifyContent="center"
           sx={{
-            backgroundColor: "primary.light",
-            pt: 2,
+            backgroundColor: "primary.main",
+            pt: 6,
             pb: 6,
           }}
         >
-          <Typography variant="h1" sx={{ fontSize: { xs: 40 } }}>
+          <Typography
+            variant="h1"
+            sx={{ fontSize: { xs: 40 }, color: "white" }}
+          >
             Get in Touch
           </Typography>
           <form onSubmit={handleSubmit(onSubmit)} noValidate>
             <Stack spacing={2} alignItems="center" width="90vw">
               <TextField
                 variant="outlined"
-                label="Name"
+                label="First Name"
                 type="text"
-                {...register("name", { required: "Name is required" })}
-                error={!!errors.name}
-                helperText={errors.name?.message}
+                {...register("firstname", {
+                  required: "First Name is required",
+                })}
+                error={!!errors.firstname}
+                helperText={errors.firstname?.message}
                 sx={{
                   width: "100%",
                 }}
+                InputLabelProps={{ style: { color: "white" } }}
               />
+
+              <TextField
+                variant="outlined"
+                label="Last Name"
+                type="text"
+                {...register("lastname", {
+                  required: "Last Name is required",
+                })}
+                error={!!errors.lastname}
+                helperText={errors.lastname?.message}
+                sx={{
+                  width: "100%",
+                }}
+                InputLabelProps={{ style: { color: "white" } }}
+              />
+
               <TextField
                 variant="outlined"
                 label="Email"
@@ -199,6 +269,7 @@ const Form = forwardRef(function Form(props, ref) {
                 sx={{
                   width: "100%",
                 }}
+                InputLabelProps={{ style: { color: "white" } }}
               />
               <TextField
                 variant="outlined"
@@ -212,6 +283,7 @@ const Form = forwardRef(function Form(props, ref) {
                 sx={{
                   width: "100%",
                 }}
+                InputLabelProps={{ style: { color: "white" } }}
               />
               <TextField
                 multiline={true}
@@ -225,6 +297,7 @@ const Form = forwardRef(function Form(props, ref) {
                 sx={{
                   width: "100%",
                 }}
+                InputLabelProps={{ style: { color: "white" } }}
               />
               <Button
                 disabled={isFetching ? true : false}
@@ -233,7 +306,10 @@ const Form = forwardRef(function Form(props, ref) {
                 variant="contained"
                 sx={{
                   width: "100%",
-                  borderRadius: 4,
+                  borderRadius: 100,
+                  position: "relative",
+                  backgroundColor: "primary.light",
+                  color: "primary.main",
                 }}
               >
                 Send

@@ -2,12 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import { createTheme, ThemeProvider } from "@mui/material";
+import { outlinedInputClasses } from "@mui/material/OutlinedInput";
 import "./index.css";
 
 const theme = createTheme({
   palette: {
     primary: {
-      light: "#f7f7f7",
+      light: "#f5f5f5",
       main: "#64B998",
       dark: "#DBDBDB",
     },
@@ -16,61 +17,86 @@ const theme = createTheme({
       dark: "#4A5F52",
     },
     info: {
-      main: "#1e1e1e",
+      main: "#000",
     },
   },
   typography: {
-    fontFamily: "Koh Santepheap, serif",
+    fontFamily: "Poppins, sans-serif",
     h1: {
       fontWeight: 700,
-      fontSize: 98,
-      color: "#1e1e1e",
+      fontSize: 40,
+      color: "#000",
     },
-    h2: { fontFamily: "Roboto, sans-serif" },
+    h2: { fontFamily: "Poppins, sans-serif" },
     h3: {
-      fontFamily: "Roboto, sans-serif",
+      fontFamily: "Poppins, sans-serif",
       fontSize: 28,
     },
-    body1: {
-      fontFamily: "Roboto, sans-serif",
+    h4: {
+      fontFamily: "Poppins, sans-serif",
+      fontSize: 20,
+      fontWeight: 700,
+      lineHeight: 1.93,
     },
-    body2: { fontFamily: "Roboto, sans-serif", fontSize: 18 },
+    body1: {
+      fontFamily: "Poppins, sans-serif",
+      fontSize: 16,
+      lineHeight: 1.93,
+    },
+    body2: {
+      fontFamily: "Poppins, sans-serif",
+      fontSize: 18,
+      lineHeight: 2.13,
+    },
   },
   components: {
     MuiButton: {
       styleOverrides: {
         root: ({ theme }) => ({
-          color: theme.palette.info.main,
+          color: theme.palette.primary.light,
           backgroundColor: theme.palette.primary.main,
           "&:hover": {
             backgroundColor: "#4A5F52",
             color: theme.palette.primary.light,
           },
-          fontFamily: "Roboto, sans-serif",
+          fontFamily: "Poppins, sans-serif",
           textTransform: "none",
           fontSize: 20,
+          fontWeight: 700,
         }),
+      },
+    },
+
+    MuiInputBase: {
+      styleOverrides: {
+        root: {
+          "&:focused": { backgroundColor: "red" },
+        },
       },
     },
 
     MuiOutlinedInput: {
       styleOverrides: {
         root: {
+          [`&:hover .${outlinedInputClasses.notchedOutline}`]: {
+            borderColor: "rgba(255, 255, 255, 0.7)",
+          },
+          [`&.Mui-focused .${outlinedInputClasses.notchedOutline}`]: {
+            borderColor: "white",
+          },
           borderRadius: 14,
+          color: "black",
+          background: "#73C0A2",
+          fieldset: {
+            borderColor: "white",
+          },
         },
       },
     },
 
     MuiFormHelperText: {
       styleOverrides: {
-        root: { fontFamily: "Roboto, sans-serif" },
-      },
-    },
-    MuiFormLabel: {
-      styleOverrides: {
-        root: ({ theme }) => ({
-          color: `${theme.palette.info.main}!important`,
-        }),
+        root: { fontFamily: "Poppins, sans-serif" },
       },
     },
   },

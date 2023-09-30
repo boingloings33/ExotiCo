@@ -2,10 +2,12 @@ import Footer from "./Components/Footer";
 import Form from "./Components/Form";
 import Header from "./Components/Header";
 import { useRef } from "react";
-import { useMediaQuery, useTheme } from "@mui/material";
+import { useMediaQuery, useTheme, Divider } from "@mui/material";
 import Section1Web from "./Components/Section1Web";
 import Section1Mobile from "./Components/Section1Mobile";
 import AppBarComp from "./Components/AppBarComp";
+import Section2Web from "./Components/Section2Web";
+import Section3Web from "./Components/Section3Web";
 
 function App() {
   const theme = useTheme();
@@ -16,8 +18,14 @@ function App() {
       <AppBarComp />
       <Header resultRef={resultRef} />
       {!isMobile ? <Section1Web /> : <Section1Mobile />}
+      {!isMobile && <Section2Web />}
+      {!isMobile && <Section3Web />}
       <Form ref={resultRef} />
-      {!isMobile && <Footer />}
+      {!isMobile && (
+        <>
+          <Divider sx={{ mt: 12 }} /> <Footer />
+        </>
+      )}
     </>
   );
 }

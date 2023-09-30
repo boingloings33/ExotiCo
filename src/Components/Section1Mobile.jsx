@@ -7,9 +7,10 @@ function Section1Mobile() {
       <Stack
         spacing={2}
         justifyContent="center"
+        alignItems="center"
         sx={{
-          px: 4,
-          py: 5,
+          px: 0,
+          py: 8,
           backgroundColor: "primary.light",
         }}
       >

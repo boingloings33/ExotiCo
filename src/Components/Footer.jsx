@@ -1,4 +1,4 @@
-import { Box, IconButton, Stack, Typography } from "@mui/material";
+import { IconButton, Stack, Typography } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
@@ -9,34 +9,47 @@ function Footer() {
       direction="row"
       justifyContent="space-between"
       alignItems="center"
-      sx={{ backgroundColor: "secondary.dark", height: "80px", px: 8 }}
+      sx={{ backgroundColor: "white", px: 8, py: 4 }}
     >
-      <Typography
-        fontFamily="'Fredoka', sans-serif;"
-        fontWeight="500"
-        fontSize="18px"
-        sx={{ color: "primary.light", mx: 1 }}
-      >
-        Powered by baioWorks
-      </Typography>
-      <Stack direction="row" alignItems="center">
+      <Stack spacing={2}>
         <Typography
           fontFamily="'Fredoka', sans-serif;"
-          fontWeight="500"
-          fontSize="18px"
-          sx={{ color: "primary.light", mx: 1 }}
+          fontWeight={700}
+          fontSize={60}
+          lineHeight={1}
+          sx={{ color: "info.main" }}
         >
-          Follow me:
+          <span>Exoti</span>
+          <span style={{ color: "#64B998" }}>Co</span>
         </Typography>
-        <IconButton href="https://www.facebook.com/" target="_blank">
-          <FacebookIcon sx={{ color: "primary.light" }} fontSize="large" />
-        </IconButton>
-        <IconButton href="https://www.instagram.com/" target="_blank">
-          <InstagramIcon sx={{ color: "primary.light" }} fontSize="large" />
-        </IconButton>
-        <IconButton href="https://www.youtube.com/" target="_blank">
-          <YouTubeIcon sx={{ color: "primary.light" }} fontSize="large" />
-        </IconButton>
+        <Typography fontSize={18} textAlign="start">
+          Copyright 2023 @ Exotico
+        </Typography>
+      </Stack>
+
+      <Stack spacing={2}>
+        <Stack direction="row" spacing={4}>
+          <Typography fontSize={18} textAlign="start">
+            About me
+          </Typography>
+          <Typography fontSize={18} textAlign="start">
+            Gallery
+          </Typography>
+          <Typography fontSize={18} textAlign="start">
+            Privacy Policy
+          </Typography>
+        </Stack>
+        <Stack direction="row" justifyContent="end">
+          <IconButton href="https://www.facebook.com/" target="_blank">
+            <FacebookIcon sx={{ color: "#818181" }} fontSize="large" />
+          </IconButton>
+          <IconButton href="https://www.instagram.com/" target="_blank">
+            <InstagramIcon sx={{ color: "#818181" }} fontSize="large" />
+          </IconButton>
+          <IconButton href="https://www.youtube.com/" target="_blank">
+            <YouTubeIcon sx={{ color: "#818181" }} fontSize="large" />
+          </IconButton>
+        </Stack>
       </Stack>
     </Stack>
   );

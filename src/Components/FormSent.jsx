@@ -4,10 +4,10 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 function FormSent({ buttonSize }) {
   return (
     <Stack className="fade" alignItems="center" direction="row" spacing={0}>
-      <Typography color="secondary" variant="body1">
+      <Typography sx={{ color: "primary.light" }} variant="body1" noWrap={true}>
         Message Sent!
       </Typography>
-      <CheckCircleIcon fontSize={buttonSize} color="secondary" />
+      <CheckCircleIcon fontSize={buttonSize} sx={{ color: "primary.light" }} />
     </Stack>
   );
 }
