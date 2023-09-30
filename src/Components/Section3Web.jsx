@@ -17,14 +17,14 @@ function Section3Web() {
         backgroundColor: "#FFFFFF",
         width: "auto",
         px: { sm: 8, md: 18, xl: 28 },
-        mt: 12,
+        mt: 16,
       }}
     >
       <img
         src="./images/allie-pic.webp"
         style={{
           objectFit: "cover",
-          maxWidth: "36%",
+          maxWidth: "33%",
           height: "auto",
           borderRadius: 16,
         }}

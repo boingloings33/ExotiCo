@@ -1,15 +1,22 @@
 import { AppBar, Toolbar, IconButton, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import SideDrawer from "./SideDrawer";
+import { useState } from "react";
 function AppBarComp() {
+  const [isOpen, setIsOpen] = useState(false);
+  function handleMenuClick() {
+    setIsOpen(true);
+  }
   return (
     <AppBar position="fixed">
+      <SideDrawer isOpen={isOpen} setIsOpen={setIsOpen} />
       <Toolbar
         sx={{
           backgroundColor: "info.main",
           justifyContent: "space-between",
         }}
       >
-        <IconButton>
+        <IconButton onClick={handleMenuClick}>
           <MenuIcon sx={{ color: "primary.light" }} />
         </IconButton>
         <Typography
@@ -18,7 +25,8 @@ function AppBarComp() {
           fontSize={24}
           sx={{ color: "primary.light" }}
         >
-          ExotiCo
+          <span>Exoti</span>
+          <span style={{ color: "#73C0A2" }}>Co</span>
         </Typography>
         <img
           src="images/crestedgecko.svg"

@@ -13,10 +13,12 @@ const theme = createTheme({
       dark: "#DBDBDB",
     },
     secondary: {
+      light: "#fff",
       main: "#3fa14a",
       dark: "#4A5F52",
     },
     info: {
+      light: "#18191a",
       main: "#000",
     },
   },
@@ -53,16 +55,16 @@ const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: ({ theme }) => ({
-          color: theme.palette.primary.light,
+          color: theme.palette.secondary.light,
           backgroundColor: theme.palette.primary.main,
           "&:hover": {
             backgroundColor: "#4A5F52",
-            color: theme.palette.primary.light,
           },
           fontFamily: "Poppins, sans-serif",
           textTransform: "none",
           fontSize: 20,
           fontWeight: 700,
+          boxShadow: "none",
         }),
       },
     },
@@ -85,7 +87,7 @@ const theme = createTheme({
             borderColor: "white",
           },
           borderRadius: 14,
-          color: "black",
+          color: "white",
           background: "#73C0A2",
           fieldset: {
             borderColor: "white",

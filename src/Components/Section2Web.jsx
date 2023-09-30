@@ -10,8 +10,11 @@ function Section2Web() {
       alignItems="center"
       sx={{
         backgroundColor: "#FFFFFF",
-        px: { sm: 8, md: 18, xl: 28 },
-        mt: 12,
+        mx: { sm: 8, md: 18, xl: 28 },
+        mt: 16,
+        // borderRadius: 10,
+        // p: 8,
+        // boxShadow: "0 4px 34px rgba(0,0,0,.1)",
       }}
     >
       <Typography variant="h1">Reptile Education</Typography>

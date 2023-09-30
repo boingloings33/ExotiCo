@@ -8,7 +8,7 @@ import {
   useTheme,
   Grid,
 } from "@mui/material";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import { forwardRef, useEffect, useState } from "react";
 import FormSent from "./FormSent";
 import EastIcon from "@mui/icons-material/East";
@@ -25,7 +25,7 @@ const Form = forwardRef(function Form(props, ref) {
       e_message: "",
     },
   });
-  const { register, handleSubmit, formState, reset } = form;
+  const { register, handleSubmit, formState, reset, control } = form;
   const { errors, isSubmitSuccessful } = formState;
   const [isFormSent, setIsFormSent] = useState(false);
   const [isFetching, setIsFetching] = useState(false);
@@ -71,7 +71,7 @@ const Form = forwardRef(function Form(props, ref) {
               justifyContent="center"
               sx={{
                 py: 10,
-                mt: 12,
+                mt: 16,
                 mx: { xs: 8, md: 18, xl: 28 },
                 borderRadius: 6,
                 backgroundColor: "primary.main",
@@ -96,83 +96,126 @@ const Form = forwardRef(function Form(props, ref) {
               </Typography>
               <Grid container spacing={1} sx={{ px: 20, pt: 2 }}>
                 <Grid item xs={6}>
-                  <TextField
-                    variant="outlined"
-                    label="First Name"
-                    type="text"
-                    {...register("a_firstname", {
-                      required: "First Name is required",
-                    })}
-                    error={!!errors.a_firstname}
-                    helperText={errors.a_firstname?.message}
-                    sx={{
-                      width: "100%",
-                    }}
-                    InputLabelProps={{ style: { color: "white" } }}
+                  <Controller
+                    name="a_firstname"
+                    control={control}
+                    render={({ field: { ref, ...field } }) => (
+                      <TextField
+                        {...field}
+                        inputRef={ref}
+                        variant="outlined"
+                        label="First Name"
+                        type="text"
+                        error={!!errors.a_firstname}
+                        helperText={errors.a_firstname?.message}
+                        {...register("a_firstname", {
+                          required: "First Name is required",
+                        })}
+                        sx={{
+                          width: "100%",
+                        }}
+                        InputLabelProps={{ style: { color: "white" } }}
+                      />
+                    )}
                   />
                 </Grid>
                 <Grid item xs={6}>
-                  <TextField
-                    variant="outlined"
-                    label="Last Name"
-                    type="text"
-                    {...register("b_lastname", {
-                      required: "Last Name is required",
-                    })}
-                    error={!!errors.b_lastname}
-                    helperText={errors.b_lastname?.message}
-                    sx={{
-                      width: "100%",
-                    }}
-                    InputLabelProps={{ style: { color: "white" } }}
+                  <Controller
+                    name="b_lastname"
+                    control={control}
+                    render={({ field: { ref, ...field } }) => (
+                      <TextField
+                        {...field}
+                        inputRef={ref}
+                        variant="outlined"
+                        defaultValue="Last Name"
+                        label="Last Name"
+                        type="text"
+                        {...register("b_lastname", {
+                          required: "Last Name is required",
+                        })}
+                        error={!!errors.b_lastname}
+                        helperText={errors.b_lastname?.message}
+                        sx={{
+                          width: "100%",
+                        }}
+                        InputLabelProps={{ style: { color: "white" } }}
+                      />
+                    )}
                   />
                 </Grid>
                 <Grid item xs={6}>
-                  <TextField
-                    variant="outlined"
-                    label="Email"
-                    type="email"
-                    {...register("c_email", { required: "Email is required" })}
-                    error={!!errors.c_email}
-                    helperText={errors.c_email?.message}
-                    sx={{
-                      width: "100%",
-                    }}
-                    InputLabelProps={{ style: { color: "white" } }}
+                  <Controller
+                    name="c_email"
+                    control={control}
+                    render={({ field: { ref, ...field } }) => (
+                      <TextField
+                        {...field}
+                        inputRef={ref}
+                        variant="outlined"
+                        label="Email"
+                        type="email"
+                        {...register("c_email", {
+                          required: "Email is required",
+                        })}
+                        error={!!errors.c_email}
+                        helperText={errors.c_email?.message}
+                        sx={{
+                          width: "100%",
+                        }}
+                        InputLabelProps={{ style: { color: "white" } }}
+                      />
+                    )}
                   />
                 </Grid>
                 <Grid item xs={6}>
-                  <TextField
-                    variant="outlined"
-                    label="Phone Number"
-                    type="text"
-                    {...register("d_number", {
-                      required: "Phone number is required",
-                    })}
-                    error={!!errors.d_number}
-                    helperText={errors.d_number?.message}
-                    sx={{
-                      width: "100%",
-                    }}
-                    InputLabelProps={{ style: { color: "white" } }}
+                  <Controller
+                    name="d_number"
+                    control={control}
+                    render={({ field: { ref, ...field } }) => (
+                      <TextField
+                        {...field}
+                        inputRef={ref}
+                        variant="outlined"
+                        label="Phone Number"
+                        type="text"
+                        {...register("d_number", {
+                          required: "Phone number is required",
+                        })}
+                        error={!!errors.d_number}
+                        helperText={errors.d_number?.message}
+                        sx={{
+                          width: "100%",
+                        }}
+                        InputLabelProps={{ style: { color: "white" } }}
+                      />
+                    )}
                   />
                 </Grid>
                 <Grid item xs={12}>
-                  <TextField
-                    multiline={true}
-                    rows={8}
-                    variant="outlined"
-                    label="Message"
-                    type="text"
-                    {...register("e_message", {
-                      required: "Message is required",
-                    })}
-                    error={!!errors.e_message}
-                    helperText={errors.e_message?.message}
-                    sx={{
-                      width: "100%",
-                    }}
-                    InputLabelProps={{ style: { color: "white" } }}
+                  <Controller
+                    name="e_message"
+                    control={control}
+                    render={({ field: { ref, ...field } }) => (
+                      <TextField
+                        {...field}
+                        inputRef={ref}
+                        multiline={true}
+                        rows={8}
+                        variant="outlined"
+                        label="Message"
+                        type="text"
+                        {...register("e_message", {
+                          required: "Message is required",
+                        })}
+                        error={!!errors.e_message}
+                        helperText={errors.e_message?.message}
+                        sx={{
+                          width: "100%",
+                        }}
+                        InputLabelProps={{ style: { color: "white" } }}
+                      />
+                    )}
                   />
                 </Grid>
                 <Box
@@ -229,75 +272,115 @@ const Form = forwardRef(function Form(props, ref) {
           </Typography>
           <form onSubmit={handleSubmit(onSubmit)} noValidate>
             <Stack spacing={2} alignItems="center" width="90vw">
-              <TextField
-                variant="outlined"
-                label="First Name"
-                type="text"
-                {...register("a_firstname", {
-                  required: "First Name is required",
-                })}
-                error={!!errors.a_firstname}
-                helperText={errors.a_firstname?.message}
-                sx={{
-                  width: "100%",
-                }}
-                InputLabelProps={{ style: { color: "white" } }}
+              <Controller
+                name="a_firstname"
+                control={control}
+                render={({ field: { ref, ...field } }) => (
+                  <TextField
+                    {...field}
+                    inputRef={ref}
+                    variant="outlined"
+                    label="First Name"
+                    type="text"
+                    {...register("a_firstname", {
+                      required: "First Name is required",
+                    })}
+                    error={!!errors.a_firstname}
+                    helperText={errors.a_firstname?.message}
+                    sx={{
+                      width: "100%",
+                    }}
+                    InputLabelProps={{ style: { color: "white" } }}
+                  />
+                )}
               />
-
-              <TextField
-                variant="outlined"
-                label="Last Name"
-                type="text"
-                {...register("b_lastname", {
-                  required: "Last Name is required",
-                })}
-                error={!!errors.b_lastname}
-                helperText={errors.b_lastname?.message}
-                sx={{
-                  width: "100%",
-                }}
-                InputLabelProps={{ style: { color: "white" } }}
+              <Controller
+                name="b_lastname"
+                control={control}
+                render={({ field: { ref, ...field } }) => (
+                  <TextField
+                    {...field}
+                    inputRef={ref}
+                    variant="outlined"
+                    label="Last Name"
+                    type="text"
+                    {...register("b_lastname", {
+                      required: "Last Name is required",
+                    })}
+                    error={!!errors.b_lastname}
+                    helperText={errors.b_lastname?.message}
+                    sx={{
+                      width: "100%",
+                    }}
+                    InputLabelProps={{ style: { color: "white" } }}
+                  />
+                )}
               />
-
-              <TextField
-                variant="outlined"
-                label="Email"
-                type="email"
-                {...register("c_email", { required: "Email is required" })}
-                error={!!errors.c_email}
-                helperText={errors.c_email?.message}
-                sx={{
-                  width: "100%",
-                }}
-                InputLabelProps={{ style: { color: "white" } }}
+              <Controller
+                name="c_email"
+                control={control}
+                render={({ field: { ref, ...field } }) => (
+                  <TextField
+                    {...field}
+                    inputRef={ref}
+                    variant="outlined"
+                    label="Email"
+                    type="email"
+                    {...register("c_email", { required: "Email is required" })}
+                    error={!!errors.c_email}
+                    helperText={errors.c_email?.message}
+                    sx={{
+                      width: "100%",
+                    }}
+                    InputLabelProps={{ style: { color: "white" } }}
+                  />
+                )}
               />
-              <TextField
-                variant="outlined"
-                label="Phone Number"
-                type="text"
-                {...register("number", {
-                  required: "Phone number is required",
-                })}
-                error={!!errors.number}
-                helperText={errors.d_number?.message}
-                sx={{
-                  width: "100%",
-                }}
-                InputLabelProps={{ style: { color: "white" } }}
+              <Controller
+                name="d_number"
+                control={control}
+                render={({ field: { ref, ...field } }) => (
+                  <TextField
+                    {...field}
+                    inputRef={ref}
+                    variant="outlined"
+                    label="Phone Number"
+                    type="text"
+                    {...register("d_number", {
+                      required: "Phone number is required",
+                    })}
+                    error={!!errors.d_number}
+                    helperText={errors.d_number?.message}
+                    sx={{
+                      width: "100%",
+                    }}
+                    InputLabelProps={{ style: { color: "white" } }}
+                  />
+                )}
               />
-              <TextField
-                multiline={true}
-                rows={8}
-                variant="outlined"
-                label="Message"
-                type="text"
-                {...register("e_message", { required: "Message is required" })}
-                error={!!errors.e_message}
-                helperText={errors.e_message?.message}
-                sx={{
-                  width: "100%",
-                }}
-                InputLabelProps={{ style: { color: "white" } }}
+              <Controller
+                name="e_message"
+                control={control}
+                render={({ field: { ref, ...field } }) => (
+                  <TextField
+                    {...field}
+                    inputRef={ref}
+                    multiline={true}
+                    rows={8}
+                    variant="outlined"
+                    label="Message"
+                    type="text"
+                    {...register("e_message", {
+                      required: "Message is required",
+                    })}
+                    error={!!errors.e_message}
+                    helperText={errors.e_message?.message}
+                    sx={{
+                      width: "100%",
+                    }}
+                    InputLabelProps={{ style: { color: "white" } }}
+                  />
+                )}
               />
               <Button
                 disabled={isFetching ? true : false}
@@ -312,7 +395,7 @@ const Form = forwardRef(function Form(props, ref) {
                   color: "primary.main",
                 }}
               >
-                Send
+                Submit {<EastIcon sx={{ ml: 1 }} />}
                 {isFormSent && (
                   <Box sx={{ position: "absolute", bottom: -36 }}>
                     <FormSent buttonSize="small" />

@@ -17,13 +17,13 @@ function App() {
     <>
       <AppBarComp />
       <Header resultRef={resultRef} />
-      {!isMobile ? <Section1Web /> : <Section1Mobile />}
+      {!isMobile ? <Section1Web resultRef={resultRef} /> : <Section1Mobile />}
       {!isMobile && <Section2Web />}
       {!isMobile && <Section3Web />}
       <Form ref={resultRef} />
       {!isMobile && (
         <>
-          <Divider sx={{ mt: 12 }} /> <Footer />
+          <Divider sx={{ mt: 16 }} /> <Footer />
         </>
       )}
     </>

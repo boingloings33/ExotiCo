@@ -6,16 +6,20 @@ import {
   Button,
 } from "@mui/material";
 
-function Section1Web() {
+function Section1Web({ resultRef }) {
   const theme = useTheme();
   const isTablet = useMediaQuery(theme.breakpoints.down("md"));
+
+  function handleScrollBottom() {
+    resultRef.current.scrollIntoView({ behavior: "smooth" });
+  }
   return (
     <Stack
       alignItems="center"
       justifyContent="center"
       sx={{
         backgroundColor: "#FFFFFF",
-        mt: 12,
+        mt: 16,
         px: { sm: 8, md: 18, xl: 28 },
       }}
     >
@@ -39,6 +43,8 @@ function Section1Web() {
             auctor eu leo a ut.
           </Typography>
           <Button
+            variant="contained"
+            onClick={handleScrollBottom}
             sx={{ borderRadius: 100, width: "fit-content", px: 4, py: 1 }}
           >
             Get Started
@@ -49,8 +55,7 @@ function Section1Web() {
             src="./images/image-3.webp"
             style={{
               objectFit: "cover",
-              maxWidth: 481,
-              height: "auto",
+              maxWidth: "37%",
               borderRadius: 16,
             }}
           />
