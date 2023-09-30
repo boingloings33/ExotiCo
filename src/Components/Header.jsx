@@ -45,7 +45,7 @@ function Header({ resultRef }) {
           <Typography
             variant="h1"
             sx={{
-              color: "primary.light",
+              color: "secondary.light",
               fontSize: { xs: "48px", sm: "99px" },
               fontFamily: "'Fredoka', sans-serif;",
             }}
@@ -56,7 +56,7 @@ function Header({ resultRef }) {
             <Typography
               textAlign="center"
               sx={{
-                color: "primary.light",
+                color: "secondary.light",
                 maxWidth: { xs: 300, sm: 520 },
                 fontSize: { xs: "16px", sm: "20px" },
               }}

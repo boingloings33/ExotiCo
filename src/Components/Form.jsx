@@ -79,7 +79,7 @@ const Form = forwardRef(function Form(props, ref) {
               <Typography
                 variant="h1"
                 alignSelf="center"
-                sx={{ color: "primary.light" }}
+                sx={{ color: "secondary.light" }}
               >
                 Get in Touch
               </Typography>
@@ -87,7 +87,7 @@ const Form = forwardRef(function Form(props, ref) {
                 variant="body2"
                 fontSize={20}
                 lineHeight={1.6}
-                sx={{ color: "primary.light" }}
+                sx={{ color: "secondary.light" }}
                 fontWeight={300}
               >
                 Diam et aliquam turpis convallis tortor auctor sit aliquam
@@ -113,7 +113,9 @@ const Form = forwardRef(function Form(props, ref) {
                         sx={{
                           width: "100%",
                         }}
-                        InputLabelProps={{ style: { color: "white" } }}
+                        InputLabelProps={{
+                          style: { color: "secondary.light" },
+                        }}
                       />
                     )}
                   />
@@ -138,7 +140,9 @@ const Form = forwardRef(function Form(props, ref) {
                         sx={{
                           width: "100%",
                         }}
-                        InputLabelProps={{ style: { color: "white" } }}
+                        InputLabelProps={{
+                          style: { color: "secondary.light" },
+                        }}
                       />
                     )}
                   />
@@ -162,7 +166,9 @@ const Form = forwardRef(function Form(props, ref) {
                         sx={{
                           width: "100%",
                         }}
-                        InputLabelProps={{ style: { color: "white" } }}
+                        InputLabelProps={{
+                          style: { color: "secondary.light" },
+                        }}
                       />
                     )}
                   />
@@ -186,7 +192,9 @@ const Form = forwardRef(function Form(props, ref) {
                         sx={{
                           width: "100%",
                         }}
-                        InputLabelProps={{ style: { color: "white" } }}
+                        InputLabelProps={{
+                          style: { color: "secondary.light" },
+                        }}
                       />
                     )}
                   />
@@ -212,7 +220,9 @@ const Form = forwardRef(function Form(props, ref) {
                         sx={{
                           width: "100%",
                         }}
-                        InputLabelProps={{ style: { color: "white" } }}
+                        InputLabelProps={{
+                          style: { color: "secondary.light" },
+                        }}
                       />
                     )}
                   />
@@ -233,7 +243,7 @@ const Form = forwardRef(function Form(props, ref) {
                     sx={{
                       borderRadius: 100,
                       position: "relative",
-                      backgroundColor: "white",
+                      backgroundColor: "secondary.light",
                       color: "primary.main",
                     }}
                   >
@@ -265,7 +275,7 @@ const Form = forwardRef(function Form(props, ref) {
         >
           <Typography
             variant="h1"
-            sx={{ fontSize: { xs: 40 }, color: "white" }}
+            sx={{ fontSize: { xs: 40 }, color: "secondary.light" }}
           >
             Get in Touch
           </Typography>
@@ -289,7 +299,7 @@ const Form = forwardRef(function Form(props, ref) {
                     sx={{
                       width: "100%",
                     }}
-                    InputLabelProps={{ style: { color: "white" } }}
+                    InputLabelProps={{ style: { color: "secondary.light" } }}
                   />
                 )}
               />
@@ -311,7 +321,7 @@ const Form = forwardRef(function Form(props, ref) {
                     sx={{
                       width: "100%",
                     }}
-                    InputLabelProps={{ style: { color: "white" } }}
+                    InputLabelProps={{ style: { color: "secondary.light" } }}
                   />
                 )}
               />
@@ -331,7 +341,7 @@ const Form = forwardRef(function Form(props, ref) {
                     sx={{
                       width: "100%",
                     }}
-                    InputLabelProps={{ style: { color: "white" } }}
+                    InputLabelProps={{ style: { color: "secondary.light" } }}
                   />
                 )}
               />
@@ -353,7 +363,7 @@ const Form = forwardRef(function Form(props, ref) {
                     sx={{
                       width: "100%",
                     }}
-                    InputLabelProps={{ style: { color: "white" } }}
+                    InputLabelProps={{ style: { color: "secondary.light" } }}
                   />
                 )}
               />
@@ -377,7 +387,7 @@ const Form = forwardRef(function Form(props, ref) {
                     sx={{
                       width: "100%",
                     }}
-                    InputLabelProps={{ style: { color: "white" } }}
+                    InputLabelProps={{ style: { color: "secondary.light" } }}
                   />
                 )}
               />
@@ -390,7 +400,7 @@ const Form = forwardRef(function Form(props, ref) {
                   width: "100%",
                   borderRadius: 100,
                   position: "relative",
-                  backgroundColor: "primary.light",
+                  backgroundColor: "secondary.light",
                   color: "primary.main",
                 }}
               >

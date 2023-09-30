@@ -17,13 +17,13 @@ function AppBarComp() {
         }}
       >
         <IconButton onClick={handleMenuClick}>
-          <MenuIcon sx={{ color: "primary.light" }} />
+          <MenuIcon sx={{ color: "secondary.light" }} />
         </IconButton>
         <Typography
           fontFamily="'Fredoka', sans-serif;"
           fontWeight={700}
           fontSize={24}
-          sx={{ color: "primary.light" }}
+          sx={{ color: "secondary.light" }}
         >
           <span>Exoti</span>
           <span style={{ color: "#73C0A2" }}>Co</span>
