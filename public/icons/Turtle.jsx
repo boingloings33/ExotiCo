@@ -4,7 +4,7 @@ function Turtle() {
       <defs>
         <style>
           {
-            ".cls-6{fill:#fff}.cls-7{fill:#3f5b1e;stroke:#3f5b1e;stroke-miterlimit:10}"
+            ".cls-6c{fill:#fff}.cls-7c{fill:#3f5b1e;stroke:#3f5b1e;stroke-miterlimit:10}"
           }
         </style>
       </defs>
@@ -47,7 +47,7 @@ function Turtle() {
             <ellipse
               cx={33.07}
               cy={30.51}
-              className="cls-6"
+              className="cls-6c"
               rx={3.83}
               ry={2.78}
               transform="rotate(-84.27 33.07 30.511)"
@@ -55,7 +55,7 @@ function Turtle() {
             <ellipse
               cx={43}
               cy={48.27}
-              className="cls-7"
+              className="cls-7c"
               rx={3.37}
               ry={2.45}
               transform="rotate(-87.95 43 48.263)"
@@ -63,7 +63,7 @@ function Turtle() {
             <ellipse
               cx={55.46}
               cy={48.27}
-              className="cls-7"
+              className="cls-7c"
               rx={3.37}
               ry={2.45}
               transform="rotate(-87.95 55.468 48.264)"
@@ -71,14 +71,14 @@ function Turtle() {
             <ellipse
               cx={65.44}
               cy={30.51}
-              className="cls-6"
+              className="cls-6c"
               rx={2.78}
               ry={3.83}
               transform="rotate(-5.73 65.38 30.515)"
             />
             <path
               d="M84.12 54.37a2.63 2.63 0 0 0-3.49-.94 69.07 69.07 0 0 1-61.95 0 2.63 2.63 0 0 0-3.49.94 2.56 2.56 0 0 0 1.29 3.46 74.22 74.22 0 0 0 16.79 6l1.3.38a74.52 74.52 0 0 0 8.16 2.22 36.24 36.24 0 0 0 19.71-1.87 74.14 74.14 0 0 0 20.39-6.74 2.56 2.56 0 0 0 1.29-3.45Z"
-              className="cls-7"
+              className="cls-7c"
             />
           </g>
         </g>
