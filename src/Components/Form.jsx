@@ -18,11 +18,11 @@ const Form = forwardRef(function Form(props, ref) {
   const isTablet = useMediaQuery(theme.breakpoints.down("md"));
   const form = useForm({
     defaultValues: {
-      firstname: "",
-      lastname: "",
-      email: "",
-      number: "",
-      message: "",
+      a_firstname: "",
+      b_lastname: "",
+      c_email: "",
+      d_number: "",
+      e_message: "",
     },
   });
   const { register, handleSubmit, formState, reset } = form;
@@ -100,11 +100,11 @@ const Form = forwardRef(function Form(props, ref) {
                     variant="outlined"
                     label="First Name"
                     type="text"
-                    {...register("firstname", {
+                    {...register("a_firstname", {
                       required: "First Name is required",
                     })}
-                    error={!!errors.firstname}
-                    helperText={errors.firstname?.message}
+                    error={!!errors.a_firstname}
+                    helperText={errors.a_firstname?.message}
                     sx={{
                       width: "100%",
                     }}
@@ -116,11 +116,11 @@ const Form = forwardRef(function Form(props, ref) {
                     variant="outlined"
                     label="Last Name"
                     type="text"
-                    {...register("lastname", {
+                    {...register("b_lastname", {
                       required: "Last Name is required",
                     })}
-                    error={!!errors.lastname}
-                    helperText={errors.lastname?.message}
+                    error={!!errors.b_lastname}
+                    helperText={errors.b_lastname?.message}
                     sx={{
                       width: "100%",
                     }}
@@ -132,9 +132,9 @@ const Form = forwardRef(function Form(props, ref) {
                     variant="outlined"
                     label="Email"
                     type="email"
-                    {...register("email", { required: "Email is required" })}
-                    error={!!errors.email}
-                    helperText={errors.email?.message}
+                    {...register("c_email", { required: "Email is required" })}
+                    error={!!errors.c_email}
+                    helperText={errors.c_email?.message}
                     sx={{
                       width: "100%",
                     }}
@@ -146,11 +146,11 @@ const Form = forwardRef(function Form(props, ref) {
                     variant="outlined"
                     label="Phone Number"
                     type="text"
-                    {...register("number", {
+                    {...register("d_number", {
                       required: "Phone number is required",
                     })}
-                    error={!!errors.number}
-                    helperText={errors.number?.message}
+                    error={!!errors.d_number}
+                    helperText={errors.d_number?.message}
                     sx={{
                       width: "100%",
                     }}
@@ -164,11 +164,11 @@ const Form = forwardRef(function Form(props, ref) {
                     variant="outlined"
                     label="Message"
                     type="text"
-                    {...register("message", {
+                    {...register("e_message", {
                       required: "Message is required",
                     })}
-                    error={!!errors.message}
-                    helperText={errors.message?.message}
+                    error={!!errors.e_message}
+                    helperText={errors.e_message?.message}
                     sx={{
                       width: "100%",
                     }}
@@ -233,11 +233,11 @@ const Form = forwardRef(function Form(props, ref) {
                 variant="outlined"
                 label="First Name"
                 type="text"
-                {...register("firstname", {
+                {...register("a_firstname", {
                   required: "First Name is required",
                 })}
-                error={!!errors.firstname}
-                helperText={errors.firstname?.message}
+                error={!!errors.a_firstname}
+                helperText={errors.a_firstname?.message}
                 sx={{
                   width: "100%",
                 }}
@@ -248,11 +248,11 @@ const Form = forwardRef(function Form(props, ref) {
                 variant="outlined"
                 label="Last Name"
                 type="text"
-                {...register("lastname", {
+                {...register("b_lastname", {
                   required: "Last Name is required",
                 })}
-                error={!!errors.lastname}
-                helperText={errors.lastname?.message}
+                error={!!errors.b_lastname}
+                helperText={errors.b_lastname?.message}
                 sx={{
                   width: "100%",
                 }}
@@ -263,9 +263,9 @@ const Form = forwardRef(function Form(props, ref) {
                 variant="outlined"
                 label="Email"
                 type="email"
-                {...register("email", { required: "Email is required" })}
-                error={!!errors.email}
-                helperText={errors.email?.message}
+                {...register("c_email", { required: "Email is required" })}
+                error={!!errors.c_email}
+                helperText={errors.c_email?.message}
                 sx={{
                   width: "100%",
                 }}
@@ -279,7 +279,7 @@ const Form = forwardRef(function Form(props, ref) {
                   required: "Phone number is required",
                 })}
                 error={!!errors.number}
-                helperText={errors.number?.message}
+                helperText={errors.d_number?.message}
                 sx={{
                   width: "100%",
                 }}
@@ -291,9 +291,9 @@ const Form = forwardRef(function Form(props, ref) {
                 variant="outlined"
                 label="Message"
                 type="text"
-                {...register("message", { required: "Message is required" })}
-                error={!!errors.message}
-                helperText={errors.message?.message}
+                {...register("e_message", { required: "Message is required" })}
+                error={!!errors.e_message}
+                helperText={errors.e_message?.message}
                 sx={{
                   width: "100%",
                 }}
