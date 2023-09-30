@@ -16,7 +16,7 @@ function Section3Web() {
         src="./images/allie-pic.webp"
         style={{
           objectFit: "cover",
-          maxWidth: "33%",
+          maxWidth: "38%",
           height: "auto",
           borderRadius: 16,
         }}

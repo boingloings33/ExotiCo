@@ -27,7 +27,7 @@ function Slideshow() {
   return (
     <Carousel
       swipe={true}
-      sx={{ width: "75%" }}
+      sx={{ width: "88%" }}
       autoPlay={false}
       fullHeightHover={false}
       indicatorContainerProps={{
@@ -61,14 +61,12 @@ function Item({ img }) {
       <Typography variant="h1" sx={{ fontSize: { xs: "40px" } }}>
         {img.title}
       </Typography>
-      <Typography sx={{ width: 290 }} variant="body1">
-        {img.caption}
-      </Typography>
+      <Typography variant="body1">{img.caption}</Typography>
       <img
         style={{
           objectFit: "cover",
-          width: 290,
-          height: 290,
+          width: "100%",
+          height: 330,
           borderRadius: 8,
         }}
         src={img.src}
