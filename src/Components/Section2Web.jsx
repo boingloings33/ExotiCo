@@ -1,6 +1,6 @@
 import { Typography, Stack } from "@mui/material";
 import InfoBox from "./InfoBox";
-import Crested from "../../public/icons/Crested";
+import Chameleon from "../../public/icons/Chameleon";
 import Snake from "../../public/icons/Snake";
 import Turtle from "../../public/icons/Turtle";
 function Section2Web() {
@@ -9,7 +9,7 @@ function Section2Web() {
       spacing={2}
       alignItems="center"
       sx={{
-        backgroundColor: "#FFFFFF",
+        backgroundColor: "secondary.light",
         mt: 16,
         // borderRadius: 10,
         // p: 8,
@@ -28,7 +28,7 @@ function Section2Web() {
       </Typography>
       <Stack direction="row" spacing={4}>
         <InfoBox
-          logo={<Crested />}
+          logo={<Chameleon />}
           title="Tincidunt mollis venenatis"
           text="Sed est non eu quis egestas vestibulum. Porttitor egestas turpis quis eget amet. Fermentum habitant pellentesque at quisque dolor sit."
         />

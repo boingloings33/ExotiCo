@@ -7,7 +7,7 @@ function Section3Web() {
       alignItems="center"
       direction="row"
       sx={{
-        backgroundColor: "#FFFFFF",
+        backgroundColor: "secondary.light",
         width: "auto",
         mt: 16,
       }}

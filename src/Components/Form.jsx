@@ -12,10 +12,11 @@ import { useForm, Controller } from "react-hook-form";
 import { forwardRef, useEffect, useState } from "react";
 import FormSent from "./FormSent";
 import EastIcon from "@mui/icons-material/East";
+
 const Form = forwardRef(function Form(props, ref) {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-  const isTablet = useMediaQuery(theme.breakpoints.down("md"));
+  // const isTablet = useMediaQuery(theme.breakpoints.down("md"));
   const form = useForm({
     defaultValues: {
       a_firstname: "",
@@ -91,7 +92,7 @@ const Form = forwardRef(function Form(props, ref) {
                 sx={{ color: "secondary.light" }}
                 fontWeight={300}
               >
-                Let me know I can help.
+                Let me know how we can help.
               </Typography>
               <Grid container spacing={1} sx={{ px: 20, pt: 2 }}>
                 <Grid item xs={6}>
@@ -245,6 +246,7 @@ const Form = forwardRef(function Form(props, ref) {
                       position: "relative",
                       backgroundColor: "secondary.light",
                       color: "primary.main",
+                      "&:hover": { color: "secondary.light" },
                     }}
                   >
                     Submit {<EastIcon sx={{ ml: 1 }} />}

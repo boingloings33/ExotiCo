@@ -18,7 +18,6 @@ function Section1Web({ resultRef }) {
       alignItems="center"
       justifyContent="center"
       sx={{
-        backgroundColor: "#FFFFFF",
         mt: 16,
       }}
     >
@@ -27,7 +26,7 @@ function Section1Web({ resultRef }) {
         spacing={4}
         alignItems="center"
         sx={{
-          backgroundColor: "primary.light",
+          backgroundColor: "#e3e3e3",
           px: 8,
           py: 4,
           borderRadius: 6,
@@ -46,7 +45,7 @@ function Section1Web({ resultRef }) {
             onClick={handleScrollBottom}
             sx={{ borderRadius: 100, width: "fit-content", px: 4, py: 1 }}
           >
-            Get Started
+            Get in touch
           </Button>
         </Stack>
         {!isTablet && (
