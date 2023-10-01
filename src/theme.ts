@@ -10,13 +10,13 @@ const theme: ThemeOptions = {
       dark: "#DBDBDB",
     },
     secondary: {
-      light: "#fff",
+      light: "#f7f7f7",
       main: "#3fa14a",
       dark: "#4A5F52",
     },
     info: {
       light: "#18191a",
-      main: "#000",
+      main: "#080808",
     },
   },
   typography: {
@@ -24,7 +24,7 @@ const theme: ThemeOptions = {
     h1: {
       fontWeight: 700,
       fontSize: 40,
-      color: "#000",
+      color: "#080808",
     },
     h2: { fontFamily: "Poppins, sans-serif" },
     h3: {
@@ -55,7 +55,7 @@ const theme: ThemeOptions = {
           color: theme.palette.secondary.light,
           backgroundColor: theme.palette.primary.main,
           "&:hover": {
-            backgroundColor: "#4A5F52",
+            backgroundColor: theme.palette.secondary.dark,
           },
           fontFamily: "Poppins, sans-serif",
           textTransform: "none",

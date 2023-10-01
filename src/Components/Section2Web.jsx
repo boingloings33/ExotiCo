@@ -9,7 +9,7 @@ function Section2Web() {
       spacing={2}
       alignItems="center"
       sx={{
-        backgroundColor: "#FFFFFF",
+        backgroundColor: "secondary.light",
         mt: 16,
         // borderRadius: 10,
         // p: 8,
