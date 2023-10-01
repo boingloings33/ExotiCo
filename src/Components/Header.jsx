@@ -16,9 +16,10 @@ function Header({ resultRef }) {
       <Stack
         justifyContent="center"
         sx={{
-          height: { xs: "100vh", sm: "960px" },
+          height: "100vh",
           width: "100%",
           position: "relative",
+          py: 4,
         }}
       >
         <Stack spacing={1} alignItems="center" justifyContent="center">
