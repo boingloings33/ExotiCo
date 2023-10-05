@@ -1,4 +1,4 @@
-import { IconButton, Stack, Typography } from "@mui/material";
+import { IconButton, Stack, Typography, Link } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
@@ -29,15 +29,25 @@ function Footer() {
 
       <Stack spacing={2}>
         <Stack direction="row" spacing={4}>
-          <Typography fontSize={18} textAlign="start">
-            About me
-          </Typography>
-          <Typography fontSize={18} textAlign="start">
-            Gallery
-          </Typography>
-          <Typography fontSize={18} textAlign="start">
-            Privacy Policy
-          </Typography>
+          <Link href="/resources" underline="none" sx={{ color: "info.main" }}>
+            <Typography fontSize={18} textAlign="start">
+              Resources
+            </Typography>
+          </Link>
+          <Link href="/gallery" underline="none" sx={{ color: "info.main" }}>
+            <Typography fontSize={18} textAlign="start">
+              Gallery
+            </Typography>
+          </Link>
+          <Link
+            href="/privacyPolicy"
+            underline="none"
+            sx={{ color: "info.main" }}
+          >
+            <Typography fontSize={18} textAlign="start">
+              Privacy Policy
+            </Typography>
+          </Link>
         </Stack>
         <Stack direction="row" justifyContent="end">
           <IconButton href="https://www.facebook.com/" target="_blank">
