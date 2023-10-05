@@ -5,13 +5,13 @@ import Carousel from "react-material-ui-carousel";
 function Slideshow() {
   const fadeImages = [
     {
-      src: "/images/allie-pic.webp",
+      src: "/images/kid-snake.webp",
       title: "First Slide",
       caption:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aspernatur fuga consequatur, asperiores deserunt ut eos corporis possimus quo vero aut ipsam rerum id! Ducimus harum debitis adipisci ipsum aut? asda oong, it do be like dat",
     },
     {
-      src: "/images/image-2.jpg",
+      src: "/images/allie-pic.webp",
       title: "Second Slide",
       caption:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi obcaecati suscipit, dolor, necessitatibus libero iure ipsa quae earum perferendis incidunt tempora asperiores porro fuga magnam quibusdam dolore voluptate velit ea.",

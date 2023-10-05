@@ -1,11 +1,11 @@
 import { Typography, Stack, Button } from "@mui/material";
 import { useMediaQuery, useTheme } from "@mui/material";
 import { Parallax } from "react-parallax";
-function Header({ resultRef }) {
+function Header({ s1Ref }) {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   function handleScrollBottom() {
-    resultRef.current.scrollIntoView({ behavior: "smooth" });
+    s1Ref.current.scrollIntoView({ behavior: "smooth" });
   }
   return (
     <Parallax
@@ -61,7 +61,7 @@ function Header({ resultRef }) {
                 fontSize: { xs: "16px", sm: "20px" },
               }}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit me poonk.
+              Traveling Education Conservation
             </Typography>
             <Button
               size="large"

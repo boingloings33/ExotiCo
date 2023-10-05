@@ -6,12 +6,12 @@ import {
   Button,
 } from "@mui/material";
 
-function Section1Web({ resultRef }) {
+function Section1Web({ formRef }) {
   const theme = useTheme();
   const isTablet = useMediaQuery(theme.breakpoints.down("md"));
 
   function handleScrollBottom() {
-    resultRef.current.scrollIntoView({ behavior: "smooth" });
+    formRef.current.scrollIntoView({ behavior: "smooth" });
   }
   return (
     <Stack
@@ -33,7 +33,7 @@ function Section1Web({ resultRef }) {
         }}
       >
         <Stack spacing={3} sx={{ pr: 6 }}>
-          <Typography variant="h1">My Mission</Typography>
+          <Typography variant="h1">What We Do</Typography>
           <Typography variant="body2" display="block">
             Ultricies tincidunt vel elementum faucibus sodales donec arcu. In
             vulputate morbi elit urna vitae vitae varius rhoncus. Gravida at

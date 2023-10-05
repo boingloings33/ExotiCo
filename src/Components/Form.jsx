@@ -64,15 +64,21 @@ const Form = forwardRef(function Form(props, ref) {
     <>
       {!isMobile && (
         <>
+          <Box
+            ref={ref}
+            sx={{
+              height: "100vh",
+              position: "absolute",
+              mt: { md: -7, xl: 7 },
+            }}
+          />
           <form onSubmit={handleSubmit(onSubmit)} noValidate>
             <Stack
               spacing={1}
-              ref={ref}
               alignItems="center"
               justifyContent="center"
               sx={{
                 py: 10,
-
                 mt: 16,
                 borderRadius: 6,
                 backgroundColor: "primary.main",
