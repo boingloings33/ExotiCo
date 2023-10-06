@@ -28,7 +28,7 @@ function Section1Web({ formRef }) {
         sx={{
           backgroundColor: "#e3e3e3",
           px: 8,
-          py: 4,
+          py: 6,
           borderRadius: 6,
         }}
       >
@@ -61,7 +61,7 @@ function Section1Web({ formRef }) {
             style={{
               objectFit: "cover",
               maxWidth: "37%",
-              height: "600px",
+              height: "500px",
               borderRadius: 16,
             }}
           />
