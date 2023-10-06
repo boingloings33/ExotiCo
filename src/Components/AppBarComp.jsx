@@ -8,11 +8,10 @@ function AppBarComp() {
     setIsOpen(true);
   }
   return (
-    <AppBar position="fixed">
+    <AppBar position="fixed" sx={{ backgroundColor: "info.main" }}>
       <SideDrawer isOpen={isOpen} setIsOpen={setIsOpen} />
       <Toolbar
         sx={{
-          backgroundColor: "info.main",
           justifyContent: "space-between",
           alignItems: "center",
         }}

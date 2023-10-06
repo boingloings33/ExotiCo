@@ -14,12 +14,7 @@ import PhotoLibraryIcon from "@mui/icons-material/PhotoLibrary";
 
 function SideDrawer({ isOpen, setIsOpen }) {
   return (
-    <Drawer
-      ModalProps={{ disableScrollLock: true }}
-      open={isOpen}
-      onClose={() => setIsOpen(false)}
-      anchor="left"
-    >
+    <Drawer open={isOpen} onClose={() => setIsOpen(false)} anchor="left">
       <Stack
         alignItems="start"
         sx={{ width: { xs: "100vw", md: 240 }, pt: 12, px: 4 }}
