@@ -18,7 +18,7 @@ function Section1Web({ formRef }) {
       alignItems="center"
       justifyContent="center"
       sx={{
-        mt: 16,
+        mt: 12,
       }}
     >
       <Stack
@@ -35,10 +35,17 @@ function Section1Web({ formRef }) {
         <Stack spacing={3} sx={{ pr: 6 }}>
           <Typography variant="h1">What We Do</Typography>
           <Typography variant="body2" display="block">
-            Ultricies tincidunt vel elementum faucibus sodales donec arcu. In
-            vulputate morbi elit urna vitae vitae varius rhoncus. Gravida at
-            vulputate nulla diam mattis a aliquam porttitor posuere. Ultrices
-            auctor eu leo a ut.
+            The premise is simple: the wild is brought to you, in the comfort of
+            your home or school. All of the animals you see are rescues,
+            ethically adopted and rehabilitated while working with licensed
+            professionals. Ranging in size, age, and species, these reptiles are
+            pets that receive TLC and personalized care 24/7. Our main values
+            are centered in empathy, respect, and responsibility for our scaly
+            friends and children alike. Your experience will go at your own
+            pace, whether you want to go hands-on (or not) is entirely up to
+            you. We teach the essentials of animal care and handling, and upon
+            request we can provide take home materials and goodies to further
+            the learning experience at home!
           </Typography>
           <Button
             variant="contained"
@@ -54,6 +61,7 @@ function Section1Web({ formRef }) {
             style={{
               objectFit: "cover",
               maxWidth: "37%",
+              height: "600px",
               borderRadius: 16,
             }}
           />

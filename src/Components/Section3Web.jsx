@@ -9,7 +9,7 @@ function Section3Web() {
       sx={{
         backgroundColor: "secondary.light",
         width: "auto",
-        mt: 16,
+        mt: 12,
       }}
     >
       <img
@@ -24,15 +24,18 @@ function Section3Web() {
       <Stack spacing={2}>
         <Typography variant="h1">About me</Typography>
         <Typography variant="body2">
-          At ETIM, we take pride in being a leading provider of cutting-edge
-          electrical solutions and services in [Location/Country]. With a rich
-          history and a commitment to excellence, we have been serving both
-          residential and commercial clients [Number of Years] years. <br />
-          <br />
-          At ETIM, we take pride in being a leading provider of cutting-edge
-          electrical solutions and services in [Location/Country]. With a rich
-          history and a commitment to excellence, we have been serving both
-          residential and commercial clients for [Number of Years] years.
+          My name is Alexandra, but you can call me Allie! I have been involved
+          in reptile keeping for the past 5 years, but I fell in love with the
+          hobby after adopting my first snake, a ball python named Maya. I
+          quickly became passionate about reptile advocacy and bringing light to
+          a misunderstood hobby. Learning from the ground up, I wanted to create
+          a positive learning environment to a new and changing market. I have
+          been fortunate enough to have ten years of combined childcare and
+          animal keeping experience, as well as veterinary and commercial
+          experience. So far I am mostly a one-woman show, but I could not have
+          taken this idea off the ground without my wonderful mother. I spend my
+          downtime with my family, reptiles, and my right hand man: a
+          Chihuahua-Corgi mix named Gustavo.
         </Typography>
       </Stack>
     </Stack>

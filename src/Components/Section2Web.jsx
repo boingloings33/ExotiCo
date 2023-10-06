@@ -10,7 +10,7 @@ function Section2Web() {
       alignItems="center"
       sx={{
         backgroundColor: "secondary.light",
-        mt: 16,
+        mt: 12,
         // borderRadius: 10,
         // p: 8,
         // boxShadow: "0 4px 34px rgba(0,0,0,.1)",
@@ -29,18 +29,18 @@ function Section2Web() {
       <Stack direction="row" spacing={4}>
         <InfoBox
           logo={<Chameleon />}
-          title="Tincidunt mollis venenatis"
-          text="Sed est non eu quis egestas vestibulum. Porttitor egestas turpis quis eget amet. Fermentum habitant pellentesque at quisque dolor sit."
+          title="Opportunities to Learn "
+          text="Learn about exotic and native reptile species that are most commonly found in the southeastern United States. Learn the history of how animals from Africa, Asia, and isles off the coast of Australia ended up becoming popular household pets. Each visit will be sprinkled with fun facts, trivia, and opportunities to win fun prizes while staying engaged in the material! "
         />
         <InfoBox
           logo={<Turtle />}
-          title="Tincidunt mollis venenatis"
-          text="Sed est non eu quis egestas vestibulum. Porttitor egestas turpis quis eget amet. Fermentum habitant pellentesque at quisque dolor sit."
+          title="Meet The Gang"
+          text="Each child and adult will have an opportunity to have one-on-one time with every animal. Whether it be petting a gecko or holding a beautiful royal python, we firmly respect boundaries to promote the most relaxed environment possible. Each reptile has a story, and you can spend individualized time with your favorites while learning about the exotic animal industry through personal experience."
         />
         <InfoBox
           logo={<Snake />}
-          title="Tincidunt mollis venenatis"
-          text="Sed est non eu quis egestas vestibulum. Porttitor egestas turpis quis eget amet. Fermentum habitant pellentesque at quisque dolor sit."
+          title="Brighter Future for Exotics"
+          text="While it may seem exciting owning exotics, find out whether reptile keeping is the best decision for you. With lots of hidden responsibilities, there may be a better way to support native and non-native animals. We will cover topics such as husbandry (animal care), lifespans, and different ways to get involved locally. "
         />
       </Stack>
     </Stack>

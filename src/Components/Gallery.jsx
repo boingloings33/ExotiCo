@@ -18,7 +18,7 @@ function Gallery() {
     "./images/allie-icon.jpg",
   ];
   return (
-    <Box sx={{ pt: 10, pb: 4, mx: { xs: 2, sm: 8, md: 18, xl: 34 } }}>
+    <Box sx={{ pt: 10, pb: 4, mx: { xs: 2, sm: 8, md: 18, xl: 28 } }}>
       <ImageList>
         {imageArr.map((img) => (
           <ImageListItem key={img}>

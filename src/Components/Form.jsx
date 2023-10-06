@@ -69,7 +69,7 @@ const Form = forwardRef(function Form(props, ref) {
             sx={{
               height: "100vh",
               position: "absolute",
-              mt: { md: -7, xl: 7 },
+              mt: { md: 3, xl: 3 },
             }}
           />
           <form onSubmit={handleSubmit(onSubmit)} noValidate>
@@ -79,7 +79,7 @@ const Form = forwardRef(function Form(props, ref) {
               justifyContent="center"
               sx={{
                 py: 10,
-                mt: 16,
+                mt: 12,
                 borderRadius: 6,
                 backgroundColor: "primary.main",
               }}

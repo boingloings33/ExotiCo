@@ -4,6 +4,7 @@ import Gallery from "./Components/Gallery";
 import Games from "./Components/Games";
 import Resources from "./Components/Resources";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import PrivacyPolicy from "./Components/PrivacyPolicy";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />}></Route>
         <Route path="/games" element={<Games />}></Route>
         <Route path="/resources" element={<Resources />}></Route>
+        <Route path="/privacy-policy" element={<PrivacyPolicy />}></Route>
       </Routes>
     </BrowserRouter>
   );

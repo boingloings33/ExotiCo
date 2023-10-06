@@ -44,7 +44,7 @@ const theme: ThemeOptions = {
     },
     body2: {
       fontFamily: "Poppins, sans-serif",
-      fontSize: 18,
+      fontSize: 16,
       lineHeight: 2.13,
     },
   },

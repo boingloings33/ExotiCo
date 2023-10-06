@@ -40,7 +40,7 @@ function Footer() {
             </Typography>
           </Link>
           <Link
-            href="/privacyPolicy"
+            href="/privacy-policy"
             underline="none"
             sx={{ color: "info.main" }}
           >
