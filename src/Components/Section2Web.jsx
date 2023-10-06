@@ -21,7 +21,7 @@ function Section2Web() {
         textAlign="center"
         variant="body2"
         color="rgba(0,0,0,.8)"
-        sx={{ px: 42, pb: 3, lineHeight: 1.61 }}
+        sx={{ px: 42, pb: 1, lineHeight: 1.61 }}
       >
         Let's dive in!
       </Typography>
