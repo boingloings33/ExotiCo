@@ -14,6 +14,7 @@ function AppBarComp() {
         sx={{
           backgroundColor: "info.main",
           justifyContent: "space-between",
+          alignItems: "center",
         }}
       >
         <IconButton onClick={handleMenuClick}>
