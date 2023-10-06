@@ -23,8 +23,7 @@ function Section2Web() {
         color="rgba(0,0,0,.8)"
         sx={{ px: 42, pb: 3, lineHeight: 1.61 }}
       >
-        Diam et aliquam turpis convallis tortor auctor sit aliquam tristique.
-        Quis in cursus dolor sit.
+        Let's dive in!
       </Typography>
       <Stack direction="row" spacing={4}>
         <InfoBox
@@ -35,12 +34,12 @@ function Section2Web() {
         <InfoBox
           logo={<Turtle />}
           title="Meet The Gang"
-          text="Each child and adult will have an opportunity to have one-on-one time with every animal. Whether it be petting a gecko or holding a beautiful royal python, we firmly respect boundaries to promote the most relaxed environment possible. Each reptile has a story, and you can spend individualized time with your favorites while learning about the exotic animal industry through personal experience."
+          text="Each child and adult will have an opportunity to have one-on-one time with every animal. Whether it be petting a gecko or holding a beautiful royal python, we firmly respect boundaries to promote the most relaxed environment possible. Each reptile has a story, and you can spend individualized time with your favorites while learning about the exotic animal industry."
         />
         <InfoBox
           logo={<Snake />}
           title="Brighter Future for Exotics"
-          text="While it may seem exciting owning exotics, find out whether reptile keeping is the best decision for you. With lots of hidden responsibilities, there may be a better way to support native and non-native animals. We will cover topics such as husbandry (animal care), lifespans, and different ways to get involved locally. "
+          text="While it may seem exciting owning exotics, find out whether reptile keeping is the best decision for you. With lots of hidden responsibilities, there may be a better way to support native and non-native animals alike. We will cover topics such as husbandry (animal care), lifespans, reading reptile body language, and different ways to get involved locally. "
         />
       </Stack>
     </Stack>
