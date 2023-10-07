@@ -20,14 +20,17 @@ function Section1Mobile() {
           your home or school. All of the animals you see are rescues, ethically
           adopted and rehabilitated while working with licensed professionals.
           Ranging in size, age, and species, these reptiles are pets that
-          receive TLC and personalized care 24/7. <br /> <br /> Our main values
-          are centered in empathy, respect, and responsibility for our scaly
-          friends and children alike. Your experience will go at your own pace,
-          whether you want to go hands-on (or not) is entirely up to you. We
-          teach the essentials of animal care and handling, and upon request we
-          can provide take home materials and goodies to further the learning
-          experience at home!
+          receive TLC and personalized care 24/7.
         </Typography>
+        <img
+          src="/images/kid-snake.webp"
+          style={{
+            objectFit: "cover",
+            width: "100%",
+            height: "400px",
+            borderRadius: 12,
+          }}
+        />
         <Divider sx={{ pt: 2, px: 0, width: "100%" }} />
       </Stack>
     </>
