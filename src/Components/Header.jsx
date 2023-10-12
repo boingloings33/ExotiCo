@@ -25,7 +25,7 @@ function Header({ s1Ref }) {
         <Stack spacing={1} alignItems="center" justifyContent="center">
           {!isMobile && (
             <img
-              src="images/allie-icon.jpg"
+              src="images/allie-icon.webp"
               alt=""
               style={{
                 width: 186,
@@ -35,7 +35,7 @@ function Header({ s1Ref }) {
           )}
           {isMobile && (
             <img
-              src="images/allie-icon.jpg"
+              src="images/allie-icon.webp"
               alt=""
               style={{
                 width: 106,

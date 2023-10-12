@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import CloseIcon from "@mui/icons-material/Close";
-import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
+// import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import PhotoLibraryIcon from "@mui/icons-material/PhotoLibrary";
 
@@ -76,7 +76,7 @@ function SideDrawer({ isOpen, setIsOpen }) {
           </Stack>
         </Link>
 
-        <Divider sx={{ width: { xs: "70%", md: "100%" } }} />
+        {/* <Divider sx={{ width: { xs: "70%", md: "100%" } }} />
         <Link href="/games" underline="none">
           <Stack
             spacing={1}
@@ -96,7 +96,7 @@ function SideDrawer({ isOpen, setIsOpen }) {
               Games
             </Typography>
           </Stack>
-        </Link>
+        </Link> */}
 
         <Divider sx={{ width: { xs: "70%", md: "100%" } }} />
         <Link href="/resources" underline="none">
