@@ -4,7 +4,6 @@ import {
   useTheme,
   useMediaQuery,
   Stack,
-  Divider,
 } from "@mui/material";
 import { useState } from "react";
 import ImageDialog from "./ImageDialog";

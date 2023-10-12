@@ -10,7 +10,7 @@ function Header({ s1Ref }) {
   return (
     <Parallax
       bgImage="/images/leavesweb.webp"
-      strength={!isMobile ? 400 : 0}
+      strength={!isMobile ? 400 : 150}
       style={{ width: "100vw" }}
     >
       <Stack
