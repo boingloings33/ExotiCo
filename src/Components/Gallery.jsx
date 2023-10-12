@@ -28,7 +28,7 @@ function Gallery() {
       id: 3,
     },
     {
-      img: "./images/image-5.png",
+      img: "./images//allie-icon.webp",
       id: 4,
     },
     {
