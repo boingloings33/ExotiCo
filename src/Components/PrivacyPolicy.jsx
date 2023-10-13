@@ -5,7 +5,7 @@ function PrivacyPolicy() {
     <>
       <Stack
         sx={{
-          mt: { xs: 10, sm: 18 },
+          mt: { xs: 8, sm: 18 },
           mx: { xs: 2, sm: 8, md: 18, xl: 28 },
           pt: 4,
         }}
