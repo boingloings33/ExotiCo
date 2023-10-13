@@ -6,14 +6,14 @@ function EventRules() {
       sx={{
         mt: 18,
         mx: { xs: 2, sm: 8, md: 18, xl: 28 },
-        py: 4,
+        pt: 4,
       }}
       justifyContent="center"
       alignItems="center"
       spacing={2}
     >
       <Typography variant="h1">Event Rules</Typography>
-      <Typography variant="h5" sx={{ px: 24 }}>
+      <Typography variant="h5" sx={{ px: { xs: 2, sm: 24 } }}>
         <Stack spacing={3}>
           <Typography variant="body2">
             <strong>1.</strong> Consequatur enim sunt ad animi quam tempore
@@ -43,6 +43,7 @@ function EventRules() {
             <strong>5.</strong> Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Iure possimus ex, eum similique voluptas
           </Typography>
+          <Divider sx={{ width: { sm: 0 } }} />
         </Stack>
       </Typography>
     </Stack>
