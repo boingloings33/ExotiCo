@@ -23,7 +23,12 @@ function Section3Mobile() {
       </Typography>
       <img
         src="/images/allie-pic.webp"
-        style={{ maxWidth: "100%", borderRadius: 12 }}
+        style={{
+          objectFit: "cover",
+          width: "100%",
+          height: "350px",
+          borderRadius: 12,
+        }}
       />
     </Stack>
   );

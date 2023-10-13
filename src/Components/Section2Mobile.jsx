@@ -5,7 +5,7 @@ function Section2Mobile() {
   return (
     <>
       <Stack
-        spacing={2}
+        spacing={1}
         justifyContent="center"
         alignItems="center"
         sx={{
@@ -22,8 +22,7 @@ function Section2Mobile() {
           sx={{ fontSize: { xs: "40px" } }}
           textAlign="center"
         >
-          Reptile
-          <br /> Education
+          Education
         </Typography>
         <Typography variant="body1">
           Learn about exotic and native reptile species that are most commonly
@@ -35,7 +34,12 @@ function Section2Mobile() {
         </Typography>
         <img
           src="/images/image-3.webp"
-          style={{ maxWidth: "100%", borderRadius: 12 }}
+          style={{
+            objectFit: "cover",
+            width: "100%",
+            height: "350px",
+            borderRadius: 12,
+          }}
         />
         <Divider sx={{ pt: 2, width: "100%" }} />
       </Stack>

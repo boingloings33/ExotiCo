@@ -98,7 +98,7 @@ const Form = forwardRef(function Form(props, ref) {
                 sx={{ color: "secondary.light" }}
                 fontWeight={300}
               >
-                Let me know how we can help.
+                Let us know how we can help.
               </Typography>
               <Grid container spacing={1} sx={{ px: 20, pt: 2 }}>
                 <Grid item xs={6}>
