@@ -82,7 +82,6 @@ const FormWeb = forwardRef(function FormWeb(
                     {...field}
                     inputRef={ref}
                     variant="outlined"
-                    defaultValue="Last Name"
                     label="Last Name"
                     type="text"
                     {...register("b_lastname", {

@@ -29,7 +29,7 @@ function AppBarComp() {
           <span style={{ color: "#73C0A2" }}>Co</span>
         </Typography>
         <img
-          src="images/crestedgecko.svg"
+          src="icons/crested-gecko.svg"
           alt=""
           style={{
             width: 36,
