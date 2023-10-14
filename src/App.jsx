@@ -6,7 +6,7 @@ import Resources from "./Navpages/Resources";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PrivacyPolicy from "./Navpages/PrivacyPolicy";
 import EventRules from "./Navpages/EventRules";
-import Footer from "./Navpages/Footer";
+import Footer from "./Components/Footer";
 
 function App() {
   return (

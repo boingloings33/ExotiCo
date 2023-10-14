@@ -96,7 +96,7 @@ function Footer() {
               )}
               {isMobile && (
                 <>
-                  <Stack direction="row" spacing={2}>
+                  <Stack direction="row" spacing={4} justifyContent="center">
                     <Link href="/" underline="none" sx={{ color: "info.main" }}>
                       <Typography fontSize={18} textAlign="start">
                         Home
@@ -121,7 +121,7 @@ function Footer() {
                       </Typography>
                     </Link>
                   </Stack>
-                  <Stack direction="row" spacing={2}>
+                  <Stack direction="row" spacing={4} justifyContent="center">
                     <Link
                       href="/event-rules"
                       underline="none"
