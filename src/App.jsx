@@ -1,4 +1,4 @@
-import AppBarComp from "./Components/AppBarComp";
+import AppBarComp from "./Components/General/AppBarComp";
 import Home from "./Components/Homepage/Home";
 import Gallery from "./Components/Navpages/Gallery";
 import Games from "./Components/Navpages/Games";
@@ -6,7 +6,7 @@ import Resources from "./Components/Navpages/Resources";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PrivacyPolicy from "./Components/Navpages/PrivacyPolicy";
 import EventRules from "./Components/Navpages/EventRules";
-import Footer from "./Components/Footer";
+import Footer from "./Components/General/Footer";
 
 function App() {
   return (

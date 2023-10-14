@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import TikTok from "../../public/icons/TikTok";
+import TikTok from "../../../public/icons/TikTok";
 
 function Footer() {
   const theme = useTheme();
