@@ -1,8 +1,8 @@
 import { Typography, Stack } from "@mui/material";
 import InfoBox from "./InfoBox";
-import Chameleon from "../../public/icons/Chameleon";
-import Snake from "../../public/icons/Snake";
-import Turtle from "../../public/icons/Turtle";
+import Chameleon from "../../../public/icons/Chameleon";
+import Snake from "../../../public/icons/Snake";
+import Turtle from "../../../public/icons/Turtle";
 function Section2Web() {
   return (
     <Stack

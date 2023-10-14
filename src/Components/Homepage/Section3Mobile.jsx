@@ -1,5 +1,5 @@
 import { Stack, Typography, SvgIcon } from "@mui/material";
-import Turtle from "../../public/icons/Turtle";
+import Turtle from "../../../public/icons/Turtle";
 function Section3Mobile() {
   return (
     <Stack

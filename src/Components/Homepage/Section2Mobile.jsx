@@ -1,5 +1,5 @@
 import { Stack, Typography, SvgIcon, Divider } from "@mui/material";
-import Snake from "../../public/icons/Snake";
+import Snake from "../../../public/icons/Snake";
 
 function Section2Mobile() {
   return (

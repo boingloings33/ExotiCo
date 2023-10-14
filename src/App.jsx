@@ -1,11 +1,11 @@
 import AppBarComp from "./Components/AppBarComp";
-import Home from "./Homepage/Home";
-import Gallery from "./Navpages/Gallery";
-import Games from "./Navpages/Games";
-import Resources from "./Navpages/Resources";
+import Home from "./Components/Homepage/Home";
+import Gallery from "./Components/Navpages/Gallery";
+import Games from "./Components/Navpages/Games";
+import Resources from "./Components/Navpages/Resources";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import PrivacyPolicy from "./Navpages/PrivacyPolicy";
-import EventRules from "./Navpages/EventRules";
+import PrivacyPolicy from "./Components/Navpages/PrivacyPolicy";
+import EventRules from "./Components/Navpages/EventRules";
 import Footer from "./Components/Footer";
 
 function App() {

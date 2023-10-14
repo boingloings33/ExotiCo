@@ -1,5 +1,5 @@
 import { Stack, Typography, SvgIcon, Divider } from "@mui/material";
-import Chameleon from "../../public/icons/Chameleon";
+import Chameleon from "../../../public/icons/Chameleon";
 
 function Section1Mobile() {
   return (
