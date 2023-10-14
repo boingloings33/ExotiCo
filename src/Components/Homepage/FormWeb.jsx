@@ -2,16 +2,12 @@ import { Typography, Stack, Box, TextField, Button, Grid } from "@mui/material";
 import { Controller } from "react-hook-form";
 import FormSent from "./FormSent";
 import EastIcon from "@mui/icons-material/East";
-function FormWeb({
-  ref,
-  handleSubmit,
-  control,
-  errors,
-  register,
-  onSubmit,
-  isFetching,
-  isFormSent,
-}) {
+import { forwardRef } from "react";
+
+const FormWeb = forwardRef(function FormWeb(
+  { handleSubmit, control, errors, register, onSubmit, isFetching, isFormSent },
+  ref
+) {
   return (
     <>
       <Box
@@ -218,6 +214,6 @@ function FormWeb({
       </form>
     </>
   );
-}
+});
 
 export default FormWeb;

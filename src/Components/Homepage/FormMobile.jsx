@@ -4,7 +4,6 @@ import FormSent from "./FormSent";
 import EastIcon from "@mui/icons-material/East";
 
 function FormMobile({
-  ref,
   handleSubmit,
   control,
   errors,
@@ -15,7 +14,6 @@ function FormMobile({
 }) {
   return (
     <Stack
-      ref={ref}
       spacing={2}
       alignItems="center"
       justifyContent="center"
