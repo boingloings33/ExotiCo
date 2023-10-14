@@ -34,7 +34,7 @@ function Section2Web() {
         <InfoBox
           logo={<Turtle />}
           title="Meet The Gang"
-          text="Each child and adult will have an opportunity to have one-on-one time with every animal. Whether it be petting a gecko or holding a beautiful royal python, we firmly respect boundaries to promote the most relaxed environment possible. Each reptile has a story, and you can spend individualized time with your favorites while learning about the exotic animal industry."
+          text="Each child and adult will have an opportunity to have one-on-one time with every animal. Whether it be petting a gecko or holding a royal python, we firmly respect boundaries to promote the most relaxed environment possible. Each reptile has a story, and you can spend individualized time with your favorites while learning about the exotic animal industry."
         />
         <InfoBox
           logo={<Snake />}

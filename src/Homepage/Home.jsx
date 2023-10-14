@@ -19,7 +19,7 @@ function Home() {
     <>
       <Header s1Ref={s1Ref} />
       <Section1Ref ref={s1Ref} />
-      <Box sx={{ mx: { sm: 8, md: 18, xl: 28 } }}>
+      <Box sx={{ mx: { sm: 8, md: 16, lg: 16, xl: 28 } }}>
         <Box>
           {!isMobile ? <Section1Web formRef={formRef} /> : <Section1Mobile />}
           {!isMobile ? <Section2Web /> : <Section2Mobile />}
