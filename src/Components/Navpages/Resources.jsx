@@ -1,5 +1,5 @@
 import { Stack, Typography, Container, Divider, Grid } from "@mui/material";
-import PDFLink from "../../PDF/PDFLInk";
+import PDFLink from "./PDFLInk";
 
 const pdfArr = [
   { name: "Corn Snake", src: "/PDFS/corn-snake.pdf" },
