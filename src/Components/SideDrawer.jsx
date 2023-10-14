@@ -11,6 +11,8 @@ import CloseIcon from "@mui/icons-material/Close";
 // import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import PhotoLibraryIcon from "@mui/icons-material/PhotoLibrary";
+import GavelIcon from "@mui/icons-material/Gavel";
+import SecurityIcon from "@mui/icons-material/Security";
 
 function SideDrawer({ isOpen, setIsOpen }) {
   return (
@@ -54,7 +56,28 @@ function SideDrawer({ isOpen, setIsOpen }) {
           </Stack>
         </Link>
         <Divider sx={{ width: { xs: "70%", md: "100%" } }} />
+        <Link href="/resources" underline="none">
+          <Stack
+            spacing={1}
+            direction="row"
+            alignItems="center"
+            sx={{
+              color: "info.light",
+              "&:hover": {
+                backgroundColor: "transparent",
+                color: "primary.main",
+                cursor: "pointer",
+              },
+            }}
+          >
+            <AutoStoriesIcon fontSize="large" />
+            <Typography fontSize={20} fontWeight={700} variant="h3">
+              Other Resources
+            </Typography>
+          </Stack>
+        </Link>
 
+        <Divider sx={{ width: { xs: "70%", md: "100%" } }} />
         <Link href="/gallery" underline="none">
           <Stack
             spacing={1}
@@ -76,6 +99,49 @@ function SideDrawer({ isOpen, setIsOpen }) {
           </Stack>
         </Link>
 
+        <Divider sx={{ width: { xs: "70%", md: "100%" } }} />
+        <Link href="/event-rules" underline="none">
+          <Stack
+            spacing={1}
+            direction="row"
+            alignItems="center"
+            sx={{
+              color: "info.light",
+              "&:hover": {
+                backgroundColor: "transparent",
+                color: "primary.main",
+                cursor: "pointer",
+              },
+            }}
+          >
+            <GavelIcon fontSize="large" />
+            <Typography fontSize={20} fontWeight={700} variant="h3">
+              Event Rules
+            </Typography>
+          </Stack>
+        </Link>
+
+        <Divider sx={{ width: { xs: "70%", md: "100%" } }} />
+        <Link href="/privacy-policy" underline="none">
+          <Stack
+            spacing={1}
+            direction="row"
+            alignItems="center"
+            sx={{
+              color: "info.light",
+              "&:hover": {
+                backgroundColor: "transparent",
+                color: "primary.main",
+                cursor: "pointer",
+              },
+            }}
+          >
+            <SecurityIcon fontSize="large" />
+            <Typography fontSize={20} fontWeight={700} variant="h3">
+              Privacy Policy
+            </Typography>
+          </Stack>
+        </Link>
         {/* <Divider sx={{ width: { xs: "70%", md: "100%" } }} />
         <Link href="/games" underline="none">
           <Stack
@@ -98,27 +164,6 @@ function SideDrawer({ isOpen, setIsOpen }) {
           </Stack>
         </Link> */}
 
-        <Divider sx={{ width: { xs: "70%", md: "100%" } }} />
-        <Link href="/resources" underline="none">
-          <Stack
-            spacing={1}
-            direction="row"
-            alignItems="center"
-            sx={{
-              color: "info.light",
-              "&:hover": {
-                backgroundColor: "transparent",
-                color: "primary.main",
-                cursor: "pointer",
-              },
-            }}
-          >
-            <AutoStoriesIcon fontSize="large" />
-            <Typography fontSize={20} fontWeight={700} variant="h3">
-              Other Resources
-            </Typography>
-          </Stack>
-        </Link>
         <Divider sx={{ width: { xs: "70%", md: "100%" } }} />
       </Stack>
     </Drawer>

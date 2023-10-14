@@ -1,12 +1,12 @@
 import AppBarComp from "./Components/AppBarComp";
-import Home from "./Components/Home";
-import Gallery from "./Components/Gallery";
-import Games from "./Components/Games";
-import Resources from "./Components/Resources";
+import Home from "./Homepage/Home";
+import Gallery from "./Navpages/Gallery";
+import Games from "./Navpages/Games";
+import Resources from "./Navpages/Resources";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import PrivacyPolicy from "./Components/PrivacyPolicy";
-import EventRules from "./Components/EventRules";
-import Footer from "./Components/Footer";
+import PrivacyPolicy from "./Navpages/PrivacyPolicy";
+import EventRules from "./Navpages/EventRules";
+import Footer from "./Navpages/Footer";
 
 function App() {
   return (
