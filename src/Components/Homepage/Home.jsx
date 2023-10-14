@@ -1,7 +1,7 @@
 import Form from "./Form";
 import Header from "./Header";
 import { useRef } from "react";
-import { useMediaQuery, useTheme, Box } from "@mui/material";
+import { Box } from "@mui/material";
 import Section1Mobile from "./Section1Mobile";
 import Section2Mobile from "./Section2Mobile";
 import Section1Web from "./Section1Web";
@@ -9,10 +9,10 @@ import Section2Web from "./Section2Web";
 import Section3Web from "./Section3Web";
 import Section1Ref from "./Section1Ref";
 import Section3Mobile from "./Section3Mobile";
+import useIsMobile from "../../hooks/useIsMobile";
 
 function Home() {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMobile = useIsMobile();
   const formRef = useRef(null);
   const s1Ref = useRef(null);
   return (

@@ -1,14 +1,12 @@
-import { useMediaQuery, useTheme } from "@mui/material";
 import { useForm } from "react-hook-form";
 import { forwardRef, useEffect, useState } from "react";
-
 import FormWeb from "./FormWeb";
 import FormMobile from "./FormMobile";
+import useIsMobile from "../../hooks/useIsMobile";
 
 const Form = forwardRef(function Form(props, ref) {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-  // const isTablet = useMediaQuery(theme.breakpoints.down("md"));
+  const isMobile = useIsMobile();
+
   const form = useForm({
     defaultValues: {
       a_firstname: "",

@@ -1,19 +1,11 @@
-import {
-  IconButton,
-  Stack,
-  Typography,
-  Link,
-  Divider,
-  useMediaQuery,
-  useTheme,
-} from "@mui/material";
+import { IconButton, Stack, Typography, Link, Divider } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TikTok from "../../../public/icons/TikTok";
+import useIsMobile from "../../hooks/useIsMobile";
 
 function Footer() {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMobile = useIsMobile();
   return (
     <>
       {

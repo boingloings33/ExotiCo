@@ -1,12 +1,7 @@
-import {
-  ImageList,
-  ImageListItem,
-  useTheme,
-  useMediaQuery,
-  Stack,
-} from "@mui/material";
+import { ImageList, ImageListItem, Stack } from "@mui/material";
 import { useState } from "react";
 import ImageDialog from "./ImageDialog";
+import useIsMobile from "../../hooks/useIsMobile";
 
 function Gallery() {
   const imageArr = [
@@ -44,8 +39,8 @@ function Gallery() {
     setOpen(true);
     setSelectedImage(img);
   }
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
+  const isMobile = useIsMobile();
 
   return (
     <>

@@ -1,15 +1,6 @@
-import {
-  Typography,
-  Stack,
-  useTheme,
-  useMediaQuery,
-  Button,
-} from "@mui/material";
+import { Typography, Stack, Button } from "@mui/material";
 
 function Section1Web({ formRef }) {
-  const theme = useTheme();
-  const isTablet = useMediaQuery(theme.breakpoints.down("md"));
-
   function handleScrollBottom() {
     formRef.current.scrollIntoView({ behavior: "smooth" });
   }
@@ -55,17 +46,15 @@ function Section1Web({ formRef }) {
             Get in touch
           </Button>
         </Stack>
-        {!isTablet && (
-          <img
-            src="./images/image-3.webp"
-            style={{
-              objectFit: "cover",
-              maxWidth: "37%",
-              height: "500px",
-              borderRadius: 16,
-            }}
-          />
-        )}
+        <img
+          src="./images/image-3.webp"
+          style={{
+            objectFit: "cover",
+            maxWidth: "37%",
+            height: "500px",
+            borderRadius: 16,
+          }}
+        />
       </Stack>
     </Stack>
   );

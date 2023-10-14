@@ -1,9 +1,9 @@
 import { Typography, Stack, Button } from "@mui/material";
-import { useMediaQuery, useTheme } from "@mui/material";
 import { Parallax } from "react-parallax";
+import useIsMobile from "../../hooks/useIsMobile";
+
 function Header({ s1Ref }) {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMobile = useIsMobile();
   function handleScrollBottom() {
     s1Ref.current.scrollIntoView({ behavior: "smooth" });
   }
