@@ -27,7 +27,6 @@ function Home() {
             fraction={isMobile ? 0.2 : 0.4}
           >
             {!isMobile ? <Section1Web formRef={formRef} /> : <Section1Mobile />}
-
             {!isMobile ? <Section2Web /> : <Section2Mobile />}
             {!isMobile ? <Section3Web /> : <Section3Mobile />}
 
