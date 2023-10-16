@@ -14,6 +14,7 @@ function Footer() {
             <Divider sx={{ mt: 12, mx: { sm: 8, md: 18, xl: 28 } }} />
           )}
           <Stack
+            spacing={isMobile ? 1 : 2}
             direction={isMobile ? "column" : "row"}
             justifyContent="space-between"
             alignItems="center"
@@ -23,21 +24,17 @@ function Footer() {
               mx: { xs: 2, sm: 8, md: 18, xl: 28 },
             }}
           >
-            <Stack spacing={isMobile ? 1 : 2}>
-              <Typography
-                fontFamily="'Fredoka', sans-serif;"
-                fontWeight={700}
-                fontSize={isMobile ? 40 : 60}
-                lineHeight={1}
-                sx={{ color: "info.main" }}
-              >
-                <span>Exoti</span>
-                <span style={{ color: "#64B998" }}>Co</span>
-              </Typography>
-              <Typography fontSize={isMobile ? 10 : 18} textAlign="start">
-                Copyright 2023 @ Exotico
-              </Typography>
-            </Stack>
+            <Typography
+              fontFamily="'Fredoka', sans-serif;"
+              fontWeight={700}
+              fontSize={isMobile ? 40 : 60}
+              lineHeight={1}
+              sx={{ color: "info.main" }}
+            >
+              <span>Exoti</span>
+              <span style={{ color: "#64B998" }}>Co</span>
+            </Typography>
+
             <Stack spacing={isMobile ? 1 : 2}>
               {!isMobile && (
                 <>

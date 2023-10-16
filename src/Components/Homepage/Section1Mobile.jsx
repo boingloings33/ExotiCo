@@ -4,11 +4,7 @@ import Chameleon from "../../../public/icons/Chameleon";
 function Section1Mobile() {
   return (
     <>
-      <Stack
-        alignItems="center"
-        sx={{ px: 3, pt: 4, backgroundColor: "primary.light" }}
-        spacing={1}
-      >
+      <Stack alignItems="center" sx={{ px: 3, pt: 4 }} spacing={1}>
         <SvgIcon sx={{ fontSize: 56 }}>
           <Chameleon />
         </SvgIcon>
@@ -20,7 +16,7 @@ function Section1Mobile() {
           your home or school. All of the animals you see are rescues, ethically
           adopted and rehabilitated while working with licensed professionals.
           Ranging in size, age, and species, these reptiles are pets that
-          receive TLC and personalized care 24/7.
+          receive personalized care 24/7.
         </Typography>
         <img
           src="/images/kid-snake.webp"

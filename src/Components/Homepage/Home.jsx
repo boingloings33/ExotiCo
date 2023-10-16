@@ -10,7 +10,7 @@ import Section3Web from "./Section3Web";
 import Section1Ref from "./Section1Ref";
 import Section3Mobile from "./Section3Mobile";
 import useIsMobile from "../../hooks/useIsMobile";
-
+import Fade from "react-reveal/Fade";
 function Home() {
   const isMobile = useIsMobile();
   const formRef = useRef(null);
@@ -21,10 +21,18 @@ function Home() {
       <Section1Ref ref={s1Ref} />
       <Box sx={{ mx: { sm: 8, md: 16, lg: 16, xl: 28 } }}>
         <Box>
-          {!isMobile ? <Section1Web formRef={formRef} /> : <Section1Mobile />}
-          {!isMobile ? <Section2Web /> : <Section2Mobile />}
-          {!isMobile ? <Section3Web /> : <Section3Mobile />}
-          <Form ref={formRef} />
+          <Fade
+            top
+            distance={isMobile ? "1%" : "5%"}
+            fraction={isMobile ? 0.2 : 0.4}
+          >
+            {!isMobile ? <Section1Web formRef={formRef} /> : <Section1Mobile />}
+
+            {!isMobile ? <Section2Web /> : <Section2Mobile />}
+            {!isMobile ? <Section3Web /> : <Section3Mobile />}
+
+            <Form ref={formRef} />
+          </Fade>
         </Box>
       </Box>
     </>

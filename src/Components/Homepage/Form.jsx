@@ -67,7 +67,6 @@ const Form = forwardRef(function Form(props, ref) {
 
       {isMobile && (
         <FormMobile
-          ref={ref}
           handleSubmit={handleSubmit}
           control={control}
           errors={errors}

@@ -20,7 +20,7 @@ function Resources() {
     <Container maxWidth={"md"}>
       <Stack
         sx={{
-          mt: { xs: 8, sm: 18 },
+          mt: { xs: 10, sm: 18 },
           backgroundColor: "primary.dark",
           p: 4,
           borderRadius: 4,

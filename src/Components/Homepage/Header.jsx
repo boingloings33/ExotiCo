@@ -1,7 +1,7 @@
 import { Typography, Stack, Button } from "@mui/material";
 import { Parallax } from "react-parallax";
 import useIsMobile from "../../hooks/useIsMobile";
-
+import Pulse from "react-reveal/Pulse";
 function Header({ s1Ref }) {
   const isMobile = useIsMobile();
   function handleScrollBottom() {
@@ -23,56 +23,64 @@ function Header({ s1Ref }) {
         }}
       >
         <Stack spacing={1} alignItems="center" justifyContent="center">
-          {!isMobile && (
-            <img
-              src="images/allie-icon.webp"
-              alt=""
-              style={{
-                width: 186,
-                borderRadius: 100,
-              }}
-            />
-          )}
-          {isMobile && (
-            <img
-              src="images/allie-icon.webp"
-              alt=""
-              style={{
-                width: 106,
-                borderRadius: 100,
-              }}
-            />
-          )}
-          <Typography
-            variant="h1"
-            sx={{
-              color: "secondary.light",
-              fontSize: { xs: "48px", sm: "99px" },
-              fontFamily: "'Fredoka', sans-serif;",
-            }}
-          >
-            ExotiCo
-          </Typography>
-          <Stack spacing={4} alignItems="center">
+          <Pulse>
+            {!isMobile && (
+              <img
+                src="images/allie-icon.webp"
+                alt=""
+                style={
+                  !isMobile && {
+                    width: 186,
+                    borderRadius: 100,
+                  }
+                }
+              />
+            )}
+          </Pulse>
+          <Pulse>
+            {isMobile && (
+              <img
+                src="images/allie-icon.webp"
+                alt=""
+                style={{
+                  width: 106,
+                  borderRadius: 100,
+                }}
+              />
+            )}
+          </Pulse>
+          <Pulse>
             <Typography
-              textAlign="center"
+              variant="h1"
               sx={{
                 color: "secondary.light",
-                maxWidth: { xs: 300, sm: 520 },
-                fontSize: { xs: "16px", sm: "20px" },
+                fontSize: { xs: "48px", sm: "99px" },
+                fontFamily: "'Fredoka', sans-serif;",
               }}
             >
-              Traveling Education Conservation
+              ExotiCo
             </Typography>
-            <Button
-              size="large"
-              onClick={handleScrollBottom}
-              variant="contained"
-              sx={{ borderRadius: 100, width: "fit-content", py: 1 }}
-            >
-              Get Started
-            </Button>
-          </Stack>
+            <Stack spacing={4} alignItems="center">
+              <Typography
+                textAlign="center"
+                sx={{
+                  color: "secondary.light",
+                  maxWidth: { xs: 300, sm: 520 },
+                  fontSize: { xs: "16px", sm: "20px" },
+                }}
+              >
+                Traveling Education Conservation
+              </Typography>
+              <Button
+                size="large"
+                onClick={handleScrollBottom}
+                variant="contained"
+                sx={{ borderRadius: 100, width: "fit-content", py: 1 }}
+              >
+                Get Started
+              </Button>
+            </Stack>
+          </Pulse>
         </Stack>
       </Stack>
     </Parallax>

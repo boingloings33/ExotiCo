@@ -11,7 +11,6 @@ function Section2Mobile() {
         sx={{
           px: 3,
           pt: 4,
-          backgroundColor: "primary.light",
         }}
       >
         <SvgIcon sx={{ fontSize: 56 }}>

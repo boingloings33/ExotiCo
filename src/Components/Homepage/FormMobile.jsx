@@ -34,10 +34,9 @@ function FormMobile({
           <Controller
             name="a_firstname"
             control={control}
-            render={({ field: { ref, ...field } }) => (
+            render={({ field: { ...field } }) => (
               <TextField
                 {...field}
-                inputRef={ref}
                 variant="outlined"
                 label="First Name"
                 type="text"
@@ -58,10 +57,9 @@ function FormMobile({
           <Controller
             name="b_lastname"
             control={control}
-            render={({ field: { ref, ...field } }) => (
+            render={({ field: { ...field } }) => (
               <TextField
                 {...field}
-                inputRef={ref}
                 variant="outlined"
                 label="Last Name"
                 type="text"
@@ -80,10 +78,9 @@ function FormMobile({
           <Controller
             name="c_email"
             control={control}
-            render={({ field: { ref, ...field } }) => (
+            render={({ field: { ...field } }) => (
               <TextField
                 {...field}
-                inputRef={ref}
                 variant="outlined"
                 label="Email"
                 type="email"
@@ -100,10 +97,9 @@ function FormMobile({
           <Controller
             name="d_number"
             control={control}
-            render={({ field: { ref, ...field } }) => (
+            render={({ field: { ...field } }) => (
               <TextField
                 {...field}
-                inputRef={ref}
                 variant="outlined"
                 label="Phone Number"
                 type="text"
@@ -122,10 +118,9 @@ function FormMobile({
           <Controller
             name="e_message"
             control={control}
-            render={({ field: { ref, ...field } }) => (
+            render={({ field: { ...field } }) => (
               <TextField
                 {...field}
-                inputRef={ref}
                 multiline={true}
                 rows={8}
                 variant="outlined"

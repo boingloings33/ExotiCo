@@ -25,10 +25,6 @@ function Gallery() {
       img: "./images/coming-soon.webp",
       id: 4,
     },
-    {
-      img: "./images/coming-soon.webp",
-      id: 5,
-    },
   ];
   const [open, setOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);

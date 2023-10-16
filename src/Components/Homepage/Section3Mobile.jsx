@@ -2,11 +2,7 @@ import { Stack, Typography, SvgIcon } from "@mui/material";
 import Turtle from "../../../public/icons/Turtle";
 function Section3Mobile() {
   return (
-    <Stack
-      alignItems="center"
-      sx={{ px: 3, py: 4, backgroundColor: "primary.light" }}
-      spacing={1}
-    >
+    <Stack alignItems="center" sx={{ px: 3, py: 4 }} spacing={1}>
       <SvgIcon sx={{ fontSize: 56 }}>
         <Turtle />
       </SvgIcon>
