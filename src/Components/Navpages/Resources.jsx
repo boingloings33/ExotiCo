@@ -27,11 +27,21 @@ function Resources() {
         }}
         alignItems="center"
         justifyContent="center"
+        spacing={1}
       >
-        <Typography textAlign="center" variant="h1">
+        <Typography
+          textAlign="center"
+          variant="h1"
+          sx={{ fontSize: { xs: 32, sm: 40 } }}
+        >
           Exotic Animal Resources
         </Typography>
-        <Typography textAlign="center" variant="body2">
+        <Typography
+          textAlign="center"
+          variant="body2"
+          sx={{ fontSize: { xs: 14, sm: 18 } }}
+          lineHeight={1.4}
+        >
           Here are some care guides to some of the more common exotics.
         </Typography>
         <Divider sx={{ width: "100%", my: 2 }} />
