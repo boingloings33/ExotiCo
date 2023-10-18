@@ -5,7 +5,7 @@ const Section1Ref = forwardRef(function Section1Ref(props, ref) {
     <Box
       ref={ref}
       sx={{
-        mt: -6,
+        mt: { md: 0, xl: -6 },
         height: "100vh",
         width: "100vw",
         position: "absolute",
