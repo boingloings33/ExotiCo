@@ -11,7 +11,7 @@ const pdfArr = [
   { name: "Iguana", src: "/PDFS/iguana.pdf" },
   { name: "Leopard Gecko", src: "/PDFS/leopard-gecko.pdf" },
   { name: "Rabbit", src: "/PDFS/rabbits.pdf" },
-  { name: "Red Eared Tortoise", src: "/PDFS/red-ear.pdf" },
+  { name: "Red Eared Slider", src: "/PDFS/red-ear.pdf" },
   { name: "Russian Tortoise", src: "/PDFS/russian-tortoise.pdf" },
 ];
 
