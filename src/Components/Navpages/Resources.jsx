@@ -6,12 +6,12 @@ const pdfArr = [
   { name: "Ball Python", src: "/PDFS/ball-python.pdf" },
   { name: "Bearded Dragon", src: "/PDFS/bearded-dragon.pdf" },
   { name: "Bird", src: "/PDFS/birds.pdf" },
-  { name: "Blue Tongue Skink", src: "/PDFS/blue-tongue-skink.pdf" },
+  { name: "Blue Tongued Skink", src: "/PDFS/blue-tongue-skink.pdf" },
   { name: "Ferret", src: "/PDFS/corn-snake.pdf" },
   { name: "Iguana", src: "/PDFS/iguana.pdf" },
   { name: "Leopard Gecko", src: "/PDFS/leopard-gecko.pdf" },
   { name: "Rabbit", src: "/PDFS/rabbits.pdf" },
-  { name: "Red Ear Turtle", src: "/PDFS/red-ear.pdf" },
+  { name: "Red Eared Tortoise", src: "/PDFS/red-ear.pdf" },
   { name: "Russian Tortoise", src: "/PDFS/russian-tortoise.pdf" },
 ];
 
