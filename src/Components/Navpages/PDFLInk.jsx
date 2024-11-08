@@ -8,7 +8,7 @@ function PDFLink({ src, name }) {
       sx={{
         color: "info.main",
         textDecoration: "none",
-        "&:hover": { textDecoration: "underline" },
+        "&:hover": { textDecoration: "underline", color: "primary.main" },
       }}
     >
       {

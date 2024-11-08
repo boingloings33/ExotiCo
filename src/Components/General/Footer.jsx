@@ -10,9 +10,7 @@ function Footer() {
     <>
       {
         <>
-          {!isMobile && (
-            <Divider sx={{ mt: 12, mx: { sm: 8, md: 18, xl: 28 } }} />
-          )}
+          {!isMobile && <Divider sx={{ mt: 12, mx: { sm: 8, md: 18, xl: 28 } }} />}
           <Stack
             spacing={isMobile ? 1 : 2}
             direction={isMobile ? "column" : "row"}
@@ -39,7 +37,14 @@ function Footer() {
               {!isMobile && (
                 <>
                   <Stack direction="row" spacing={4}>
-                    <Link href="/" underline="none" sx={{ color: "info.main" }}>
+                    <Link
+                      href="/"
+                      underline="none"
+                      sx={{
+                        color: "info.main",
+                        "&:hover": { textDecoration: "underline", color: "primary.main" },
+                      }}
+                    >
                       <Typography fontSize={18} textAlign="start">
                         Home
                       </Typography>
@@ -47,7 +52,10 @@ function Footer() {
                     <Link
                       href="/resources"
                       underline="none"
-                      sx={{ color: "info.main" }}
+                      sx={{
+                        color: "info.main",
+                        "&:hover": { textDecoration: "underline", color: "primary.main" },
+                      }}
                     >
                       <Typography fontSize={18} textAlign="start">
                         Resources
@@ -56,7 +64,10 @@ function Footer() {
                     <Link
                       href="/gallery"
                       underline="none"
-                      sx={{ color: "info.main" }}
+                      sx={{
+                        color: "info.main",
+                        "&:hover": { textDecoration: "underline", color: "primary.main" },
+                      }}
                     >
                       <Typography fontSize={18} textAlign="start">
                         Gallery
@@ -65,7 +76,10 @@ function Footer() {
                     <Link
                       href="/event-rules"
                       underline="none"
-                      sx={{ color: "info.main" }}
+                      sx={{
+                        color: "info.main",
+                        "&:hover": { textDecoration: "underline", color: "primary.main" },
+                      }}
                     >
                       <Typography fontSize={18} textAlign="start">
                         Event Rules
@@ -74,7 +88,10 @@ function Footer() {
                     <Link
                       href="/privacy-policy"
                       underline="none"
-                      sx={{ color: "info.main" }}
+                      sx={{
+                        color: "info.main",
+                        "&:hover": { textDecoration: "underline", color: "primary.main" },
+                      }}
                     >
                       <Typography fontSize={18} textAlign="start">
                         Privacy Policy
@@ -91,40 +108,24 @@ function Footer() {
                         Home
                       </Typography>
                     </Link>
-                    <Link
-                      href="/resources"
-                      underline="none"
-                      sx={{ color: "info.main" }}
-                    >
+                    <Link href="/resources" underline="none" sx={{ color: "info.main" }}>
                       <Typography fontSize={18} textAlign="start">
                         Resources
                       </Typography>
                     </Link>
-                    <Link
-                      href="/gallery"
-                      underline="none"
-                      sx={{ color: "info.main" }}
-                    >
+                    <Link href="/gallery" underline="none" sx={{ color: "info.main" }}>
                       <Typography fontSize={18} textAlign="start">
                         Gallery
                       </Typography>
                     </Link>
                   </Stack>
                   <Stack direction="row" spacing={4} justifyContent="center">
-                    <Link
-                      href="/event-rules"
-                      underline="none"
-                      sx={{ color: "info.main" }}
-                    >
+                    <Link href="/event-rules" underline="none" sx={{ color: "info.main" }}>
                       <Typography fontSize={18} textAlign="start">
                         Event Rules
                       </Typography>
                     </Link>
-                    <Link
-                      href="/privacy-policy"
-                      underline="none"
-                      sx={{ color: "info.main" }}
-                    >
+                    <Link href="/privacy-policy" underline="none" sx={{ color: "info.main" }}>
                       <Typography fontSize={18} textAlign="start">
                         Privacy Policy
                       </Typography>
@@ -132,20 +133,11 @@ function Footer() {
                   </Stack>
                 </>
               )}
-              <Stack
-                direction="row"
-                justifyContent={isMobile ? "center" : "end"}
-              >
-                <IconButton
-                  href="https://www.facebook.com/profile.php?id=61552191487395"
-                  target="_blank"
-                >
+              {/* <Stack direction="row" justifyContent={isMobile ? "center" : "end"}>
+                <IconButton href="https://www.facebook.com/profile.php?id=61552191487395" target="_blank">
                   <FacebookIcon sx={{ color: "#818181" }} fontSize="large" />
                 </IconButton>
-                <IconButton
-                  href="https://www.instagram.com/exoticocharleston/"
-                  target="_blank"
-                >
+                <IconButton href="https://www.instagram.com/exoticocharleston/" target="_blank">
                   <InstagramIcon sx={{ color: "#818181" }} fontSize="large" />
                 </IconButton>
                 <IconButton
@@ -155,7 +147,7 @@ function Footer() {
                 >
                   <TikTok />
                 </IconButton>
-              </Stack>
+              </Stack> */}
             </Stack>
           </Stack>
         </>

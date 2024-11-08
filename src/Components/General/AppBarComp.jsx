@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, IconButton, Typography } from "@mui/material";
+import { AppBar, Toolbar, IconButton, Typography, Link } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import SideDrawer from "./SideDrawer";
 import { useState } from "react";
@@ -25,8 +25,10 @@ function AppBarComp() {
           fontSize={24}
           sx={{ color: "secondary.light" }}
         >
-          <span>Exoti</span>
-          <span style={{ color: "#73C0A2" }}>Co</span>
+          <Link href="/" underline="none">
+            <span style={{ color: "white" }}>Exoti</span>
+            <span>Co</span>
+          </Link>
         </Typography>
         <img
           src="icons/crested-gecko.svg"

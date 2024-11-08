@@ -8,11 +8,7 @@ function Header({ s1Ref }) {
     s1Ref.current.scrollIntoView({ behavior: "smooth" });
   }
   return (
-    <Parallax
-      bgImage="/images/leavesweb.webp"
-      strength={!isMobile ? 200 : 100}
-      style={{ width: "100vw" }}
-    >
+    <Parallax bgImage="/images/leavesweb.webp" strength={!isMobile ? 200 : 100} style={{ width: "100vw" }}>
       <Stack
         justifyContent="center"
         sx={{
@@ -60,6 +56,7 @@ function Header({ s1Ref }) {
             >
               ExotiCo
             </Typography>
+
             <Stack spacing={4} alignItems="center">
               <Typography
                 textAlign="center"

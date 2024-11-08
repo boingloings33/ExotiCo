@@ -22,7 +22,7 @@ function Gallery() {
       id: 3,
     },
     {
-      img: "./images/coming-soon.webp",
+      img: "./images/odin2.webp",
       id: 4,
     },
   ];
@@ -40,11 +40,7 @@ function Gallery() {
 
   return (
     <>
-      <ImageDialog
-        open={open}
-        handleClose={handleClose}
-        selectedImage={selectedImage}
-      />
+      <ImageDialog open={open} handleClose={handleClose} selectedImage={selectedImage} />
       <Stack
         sx={{
           pt: 10,
